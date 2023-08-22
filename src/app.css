@@ -1,0 +1,78 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global configuration */
+:root {
+  --bg-color: #262335;
+  --bg-color-off: rgba(69, 40, 233, 0.1);
+  --text-primary-color: #ffffff;
+  --text-secondary-color: #c6c6c6;
+  --primary-color: #FFFF00;
+  --details-color: #343536;
+  --font-family-base: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* General styles */
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--text-secondary-color);
+  background-color: var(--bg-color);
+  font-size: 16px;
+}
+
+h1 {
+  color: var(--text-primary-color);
+  text-rendering: optimizeLegibility;
+  font-size: clamp(1.5625rem, 0.2717rem + 5.163vw, 2.75rem);
+}
+
+h2 {
+  color: var(--text-primary-color);
+  text-decoration: none;
+  margin-bottom: 32px;
+  font-size: 18px;
+}
+
+h3 {
+  color: var(--text-primary-color);
+  text-decoration: none;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary-color);
+  font-weight: 600;
+}
+
+.pd-0 {
+  padding: 16px 0;
+}
+
+.pd-1 {
+  padding: 32px 0;
+}
+
+.pd-2 {
+  padding: 64px 0;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}

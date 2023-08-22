@@ -1,0 +1,18 @@
+.title {
+  text-align: center;
+  flex-direction: column;
+}
+
+.title p {
+  padding: 24px 0;
+  line-height: 1.4;
+}
+
+.title h1 {
+  line-height: 1.8;
+}
+
+.title h1 span {
+  border-bottom: 10px solid var(--bg-color-off);
+  margin-bottom: -20px; /* Ajusta para controlar la separación entre el subrayado y el texto */
+}

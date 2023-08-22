@@ -1,0 +1,25 @@
+.skills {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.skill-styles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.skill {
+  background-color: var(--bg-color-off);
+  width: auto;
+  border-radius: 30px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin: 5px 5px;
+}

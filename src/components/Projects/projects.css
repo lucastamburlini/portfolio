@@ -1,0 +1,37 @@
+.projects {
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid var(--details-color);
+  padding: 18px;
+}
+
+.card-img {
+  height: 125px;
+  width: 200px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 8px;
+}
+
+.card-button {
+  display: flex;
+  padding: 8px;
+}
+
+.card-button div {
+  padding: 0 8px;
+}
