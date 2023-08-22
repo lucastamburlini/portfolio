@@ -1,6 +1,6 @@
 import "../Navbar/navbar.css";
 import CloseIcon from "@mui/icons-material/Close";
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="navbar container">
       <div className="navbar-logo">
         <img
-          src={"../src/assets/logo_white_large.png"}
+          src={"../../public/logo_white_large.png"}
           alt={"logo_white_large.png"}
         />
       </div>
