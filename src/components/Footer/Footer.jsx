@@ -8,10 +8,7 @@ const Footer = () => {
   return (
     <div className="footer container pd-1">
       <div className="logo">
-        <img
-          src={"../public/logoWhiteLarge.png"}
-          alt={"logoWhiteLarge.png"}
-        />
+        <img src="/logoWhiteLarge.png" alt="logo_white_large.png" />
       </div>
       <div className="phrase pd-1">
         <p>Every day, growing, learning, and progressing one step at a time.</p>

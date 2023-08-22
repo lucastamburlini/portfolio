@@ -13,10 +13,7 @@ const Navbar = () => {
   return (
     <nav className="navbar container">
       <div className="navbar-logo">
-        <img
-          src={"../../public/logoWhiteLarge.png"}
-          alt={"logo_white_large.png"}
-        />
+        <img src="/logoWhiteLarge.png" alt="logo_white_large.png" />
       </div>
       <div className={`navbar-links ${open ? "active" : ""}`}>
         <div>
