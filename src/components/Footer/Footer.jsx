@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer container pd-1">
       <div className="logo">
         <img
-          src={"../../public/logoWhiteLarge.png"}
+          src={"../public/logoWhiteLarge.png"}
           alt={"logoWhiteLarge.png"}
         />
       </div>
