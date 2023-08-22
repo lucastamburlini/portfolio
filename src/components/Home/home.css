@@ -14,5 +14,5 @@
 
 .title h1 span {
   border-bottom: 10px solid var(--bg-color-off);
-  margin-bottom: -20px; /* Ajusta para controlar la separación entre el subrayado y el texto */
+  margin-bottom: -20px;
 }
