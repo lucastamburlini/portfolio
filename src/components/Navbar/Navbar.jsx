@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="navbar container">
       <div className="navbar-logo">
         <img
-          src={"../public/logo_white_large.png"}
+          src={"../public/logoWhiteLarge.png"}
           alt={"logo_white_large.png"}
         />
       </div>
