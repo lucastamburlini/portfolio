@@ -9,7 +9,7 @@ export const listProjects = [
         id: 1,
         title: "Web Portfolio",
         description: "Initial version of my personal portfolio, built with React, SCSS, and HTML. Showcases my work and skills creatively and visually, with a detail-oriented approach.",
-        img: "src/assets/portfolio.jpg",
+        img: "./assets/portfolio.jpg",
         url: "https://lucastamburliniold.vercel.app/",
         gh: "https://github.com/lucastamburlini/portfolio-viejo.git",
     }
