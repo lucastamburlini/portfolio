@@ -16,6 +16,16 @@
   width: 40px;
 }
 
+.navbar-assets {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-assets {
+  display: flex;
+  gap: 20px;
+}
+
 .navbar-links {
   display: none;
 }

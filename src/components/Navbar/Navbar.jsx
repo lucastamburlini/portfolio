@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
-import LanguageSwitch from "../LanguageSwitch.jsx";
+import LanguageSwitch from "../LanguageSwitch/LanguageSwitch.jsx";
 
 import "../Navbar/navbar.css";
 
@@ -18,36 +18,36 @@ const Navbar = () => {
       <div className="navbar-logo">
         <img src="/logoWhiteLarge.png" alt="logo_white_large.png" />
       </div>
-      <div className={`navbar-links ${open ? "active" : ""}`}>
-        <div>
-          <ul>
-            <li>
-              <a href="#about" onClick={handleClick}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#technologies" onClick={handleClick}>
-                Technologies
-              </a>
-            </li>
-            <li>
-              <a href="#projects" onClick={handleClick}>
-                Projects
-              </a>
-            </li>
-          </ul>
+      <div className="navbar-assets">
+        <LanguageSwitch />
+        <div className={`navbar-links ${open ? "active" : ""}`}>
+          <div>
+            <ul>
+              <li>
+                <a href="#about" onClick={handleClick}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#technologies" onClick={handleClick}>
+                  Technologies
+                </a>
+              </li>
+              <li>
+                <a href="#projects" onClick={handleClick}>
+                  Projects
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="navbar-lenguage">
-          <LanguageSwitch />
+        <div className="navbar-toggle" onClick={handleClick}>
+          {open ? (
+            <CloseIcon className="menu-close" />
+          ) : (
+            <MenuIcon className="menu-open" />
+          )}
         </div>
-      </div>
-      <div className="navbar-toggle" onClick={handleClick}>
-        {open ? (
-          <CloseIcon className="menu-close" />
-        ) : (
-          <MenuIcon className="menu-open" />
-        )}
       </div>
     </nav>
   );

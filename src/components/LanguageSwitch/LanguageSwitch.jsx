@@ -1,5 +1,7 @@
 import { useDispatch } from "react-redux";
-import { changeLanguage } from "../redux/actions";
+import { changeLanguage } from "../../redux/actions";
+
+import './LanguageSwitch.css'
 
 const LanguageSwitch = () => {
   const dispatch = useDispatch();
@@ -9,7 +11,7 @@ const LanguageSwitch = () => {
   };
 
   return (
-    <div>
+    <div className="LanguageSwitch">
       <select onChange={handleLanguageChange}>
         {["English", "Español"].map((language) => (
           <option key={language} value={language}>

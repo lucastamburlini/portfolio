@@ -1,0 +1,6 @@
+.LanguageSwitch select {
+  background: transparent;
+  color: var(--primary-text-color);
+  padding: 4px 7px;
+  font-size: 10px;
+}
