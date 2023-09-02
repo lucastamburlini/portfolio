@@ -7,10 +7,10 @@ const Home = () => {
         Hello, I&apos;m <span>Lucas Tamburlini</span>
       </h1>
       <p>
-        A dedicated web developer. I craft sophisticated user-centric web
+        As a dedicated web developer, I craft sophisticated user-centric web
         experiences with meticulous attention to detail.
         <br />
-        Let&apos;s bring your digital vision to life.
+        Let&apos;s bring your digital vision to life!
       </p>
     </div>
   );

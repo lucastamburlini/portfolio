@@ -3,7 +3,8 @@ import { tools } from "../../data/data";
 
 const Skills = () => {
   return (
-    <div className="skills container pd-1">
+    <div 
+   id="technologies" className="skills container pd-1">
       {tools.map((tool) => (
         <div key={tool.category}>
           <div>{tool.icon}</div>

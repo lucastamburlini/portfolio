@@ -6,7 +6,7 @@ const About = () => {
       <h2>About</h2>
       <p>
         {" "}
-        Passionate about technology and programming. I was born on June 3, 1991
+        Passionate about technology and programming, I was born on June 3, 1991
         in{" "}
         <a
           href="https://goo.gl/maps/EFRJAZAV2rjxeQNJ6"
@@ -16,20 +16,20 @@ const About = () => {
           {" "}
           Concepción del Uruguay, Entre Ríos, Argentina
         </a>
-        , and I graduated from the{" "}
+        , and I graduated from {" "}
         <a
           href="https://www.ub.edu.ar/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          University of Belgrano
+          Universidad de Belgrano
         </a>{" "}
         as University Analyst in Human Capital Management in 2022.
       </p>{" "}
       <br />
       <p>
-        After finishing my degree, I discovered my true vocation as a programmer
-        and graduated as a Full Stack Web Programmer at{" "}
+        After finishing my degree, I discovered my true vocation as a developer
+        and graduated as a Full Stack Web Developer at{" "}
         <a
           href="https://www.soyhenry.com/"
           target="_blank"
@@ -46,7 +46,7 @@ const About = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          National Technological University
+          Universidad Tecnologica Nacional
         </a>{" "}
         and as an IT Recruiter at{" "}
         <a
@@ -54,7 +54,7 @@ const About = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Staffy
+          Staffy.
         </a>{" "}
       </p>
     </div>
