@@ -1,10 +1,15 @@
+import { useSelector } from "react-redux";
+import translations from "../../assets/translations";
+
 import "./home.css";
 
 const Home = () => {
+  const currentLanguage = useSelector((state) => state.language);
+
   return (
     <div className="title container pd-1">
       <h1>
-        Hello, I&apos;m <span>Lucas Tamburlini</span>
+        {translations[currentLanguage].title} <span>Lucas Tamburlini</span>
       </h1>
       <p>
         As a dedicated web developer, I craft sophisticated user-centric web

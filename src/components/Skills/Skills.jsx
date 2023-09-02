@@ -1,5 +1,5 @@
 import "./skills.css";
-import { tools } from "../../data/data";
+import { tools } from "../../assets/data";
 
 const Skills = () => {
   return (

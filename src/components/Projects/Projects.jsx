@@ -1,4 +1,4 @@
-import { listProjects } from "../../data/data";
+import { listProjects } from "../../assets/data";
 import CodeIcon from "@mui/icons-material/Code";
 import LanguageIcon from "@mui/icons-material/Language";
 import "./projects.css";

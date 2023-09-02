@@ -1,7 +1,10 @@
-import "../Navbar/navbar.css";
+import { useState } from "react";
+
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useState } from "react";
+import LanguageSwitch from "../LanguageSwitch.JSX";
+
+import "../Navbar/navbar.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -29,7 +32,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-lenguage">English</div>
+        <div className="navbar-lenguage">
+          <LanguageSwitch />
+        </div>
       </div>
       <div className="navbar-toggle" onClick={handleClick}>
         {open ? (
