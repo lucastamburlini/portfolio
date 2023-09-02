@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
-import LanguageSwitch from "../LanguageSwitch.JSX";
+import LanguageSwitch from "../LanguageSwitch.jsx";
 
 import "../Navbar/navbar.css";
 

@@ -7,7 +7,7 @@ const translations = {
   Español: {
     title: "Hola, soy ",
     introduction_I: "Como desarrollador web dedicado, creo sofisticadas experiencias web centradas en el usuario con una meticulosa atención al detalle.",
-    introduction_II: "Hagamos realidad tu visión digital."
+    introduction_II: "¡Hagamos realidad tu visión digital!"
   }
 };
 
