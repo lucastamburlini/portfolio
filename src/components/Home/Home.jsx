@@ -12,10 +12,9 @@ const Home = () => {
         {translations[currentLanguage].title} <span>Lucas Tamburlini</span>
       </h1>
       <p>
-        As a dedicated web developer, I craft sophisticated user-centric web
-        experiences with meticulous attention to detail.
+      {translations[currentLanguage].introduction_I}
         <br />
-        Let&apos;s bring your digital vision to life!
+        {translations[currentLanguage].introduction_II}
       </p>
     </div>
   );

@@ -9,6 +9,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case CHANGE_LANGUAGE:
+            // eslint-disable-next-line no-case-declarations
             const newLanguage = action.payload;
 
             if (newLanguage === "English" || newLanguage === "Español") {

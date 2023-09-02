@@ -22,13 +22,19 @@ const Navbar = () => {
         <div>
           <ul>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" onClick={handleClick}>
+                About
+              </a>
             </li>
             <li>
-              <a href="#technologies">Technologies</a>
+              <a href="#technologies" onClick={handleClick}>
+                Technologies
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={handleClick}>
+                Projects
+              </a>
             </li>
           </ul>
         </div>
