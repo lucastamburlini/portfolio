@@ -13,7 +13,7 @@
 }
 
 .navbar img {
-  width: 40px;
+  width: 38px;
 }
 
 .navbar-assets {
@@ -49,6 +49,11 @@
 
 .navbar-links.active li a {
   font-weight: bold;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-links.active li a:hover {
+  color: var(--primary-color);
 }
 
 .navbar-toggle {
@@ -56,15 +61,26 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 38px;
+  width: 38px;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-toggle:hover {
+  color: var(--primary-color);
+}
+
+.navbar-toggle svg {
+  height: 36px;
+  width: 36px;
 }
 
 .menu-close {
   position: relative;
   cursor: pointer;
   z-index: 2;
-  height: 30px;
 }
+
 .menu-open {
-  height: 30px;
   cursor: pointer;
 }

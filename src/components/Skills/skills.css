@@ -13,6 +13,7 @@
   border: 1px solid var(--text-secondary-color);
   height: 300px;
   width: 290px;
+  border-radius: 5px;
 }
 
 .skill-container-svg {
@@ -43,7 +44,7 @@
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--primary-color);
-  margin: 15px 0;
+  margin: 15px 10px;
   gap: 15px;
 }
 
