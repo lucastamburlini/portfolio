@@ -25,6 +25,7 @@ export const tools = [
             { name: "CSS" },
             { name: "JavaScript" },
             { name: "React" },
+            { name: "Redux" },
             { name: "Sass" },
             { name: "Bootstrap" },
             { name: "Material UI" },

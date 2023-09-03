@@ -1,6 +1,14 @@
+.LanguageSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .LanguageSwitch select {
+  cursor: pointer;
   background: transparent;
-  color: var(--primary-text-color);
+  color: var(--text-secondary-color);
   padding: 4px 7px;
   font-size: 10px;
+  border: 1px solid var(--text-secondary-color);
 }

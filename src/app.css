@@ -60,8 +60,6 @@ h2 {
 
 h3 {
   color: var(--text-primary-color);
-  text-decoration: none;
-  margin-bottom: 16px;
 }
 
 li {
@@ -87,7 +85,6 @@ a {
 }
 
 .container {
-  display: flex;
   width: 80%;
   margin: auto;
 }
