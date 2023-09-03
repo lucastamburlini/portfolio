@@ -11,7 +11,8 @@ const translations = {
     about_text_II: "After finishing my degree, I discovered my true vocation as a developer and graduated as a Full Stack Web Developer at Henry, where I acquired the necessary skills to work in the world of technology. On the other hand, I also specialized in search and selection of talent at the Universidad Tecnologica Nacional and as an IT Recruiter at Staffy.",
 
     // Projects
-    project_title: "Web Portfolio v1.0",
+    project_title: "Projects",
+    project: "Web Portfolio v1.0",
     description: "Initial version of my personal web portfolio, built with React, Scss, and HTML. It creatively showcases my work and skills with a detail-oriented approach.",
 
     // Footer
@@ -19,7 +20,7 @@ const translations = {
     footer_text_I: "Every day, growing, learning, and progressing one step at a time.",
     footer_text_II: "Handcrafted by ",
 
-    
+
   },
 
 
@@ -35,7 +36,8 @@ const translations = {
     about_text_II: "Luego de terminar la carrera, descubrí mi verdadera vocación como desarrollador y me gradué como Full Stack Web Developer en Henry, donde adquirí las habilidades necesarias para trabajar en el mundo de la tecnología. Por otro lado, también me especialicé en búsqueda y selección de talento en la Universidad Tecnológica Nacional y como IT Recruiter en Staffy.",
 
     // Projects
-    project_title: "Portfolio Web v1.0",
+    project_title: "Proyectos",
+    project: "Portfolio Web v1.0",
     description: "Versión inicial de mi portafolio web personal, construido con React, Scss y HTML. Muestra creativamente mi trabajo y habilidades con un enfoque orientado a los detalles.",
 
     // Footer

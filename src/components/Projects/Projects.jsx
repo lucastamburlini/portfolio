@@ -11,7 +11,7 @@ const Projects = () => {
   const listProjects = [
     {
       id: 1,
-      title: translations[currentLanguage].project_title,
+      title: translations[currentLanguage].project,
       description: translations[currentLanguage].description,
       img: "/portfolio.jpg",
       url: "https://lucastamburliniold.vercel.app/",
@@ -21,7 +21,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="projects container pd-1">
-      <h2>Projects</h2>
+      <h2>{translations[currentLanguage].project_title}</h2>
       {listProjects.map((projects) => (
         <div className="card" key={projects.id}>
           <div>
