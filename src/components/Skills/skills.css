@@ -1,9 +1,18 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .skill-container {
   display: grid;
   grid-template-rows: 40% 60%;
   border: 1px solid var(--text-secondary-color);
   height: 300px;
-  margin: 10px 0;
+  width: 290px;
 }
 
 .skill-container-svg {
@@ -32,10 +41,10 @@
   align-items: center;
   flex-wrap: wrap;
   font-size: 0.8rem;
-  font-weight: 900;
+  font-weight: 600;
   color: var(--primary-color);
   margin: 15px 0;
-  gap: 10px;
+  gap: 15px;
 }
 
 .skill {
@@ -43,7 +52,6 @@
   display: flex;
   text-align: center;
   justify-content: center;
-
   background-color: var(--bg-color-off);
   border-radius: 30px;
   padding-top: 0.25rem;

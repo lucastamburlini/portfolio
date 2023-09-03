@@ -1,22 +1,76 @@
+import LayersIcon from "@mui/icons-material/Layers";
+import TerminalIcon from "@mui/icons-material/Terminal";
+import StorageIcon from "@mui/icons-material/Storage";
+import BugReportIcon from "@mui/icons-material/BugReport";
+import BuildIcon from "@mui/icons-material/Build";
+
 import "./skills.css";
-import { tools } from "../../assets/data";
+
+const skills = [
+  {
+    icon: <TerminalIcon />,
+    category: "Front End",
+    items: [
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "JavaScript" },
+      { name: "React" },
+      { name: "Redux" },
+      { name: "Sass" },
+      { name: "Bootstrap" },
+      { name: "Material UI" },
+    ],
+  },
+  {
+    icon: <StorageIcon />,
+    category: "Back End",
+    items: [{ name: "Node.js" }, { name: "Express" }, { name: "MongoDB" }],
+  },
+  {
+    icon: <LayersIcon />,
+    category: "Design",
+    items: [
+      { name: "Adobe Photoshop" },
+      { name: "Canva" },
+      { name: "CorelDRAW" },
+    ],
+  },
+  {
+    icon: <BugReportIcon />,
+    category: "Testing",
+    items: [
+      { name: "Exploratory Testing" },
+      { name: "Conventional Testing Methodologies" },
+    ],
+  },
+  {
+    icon: <BuildIcon />,
+    category: "Additional Tools",
+    items: [
+      { name: "Jira" },
+      { name: "Postman" },
+      { name: "Trello" },
+      { name: "Agile Methodologies" },
+    ],
+  },
+];
 
 const Skills = () => {
   return (
-    <div id="technologies" className="container pd-1">
-      {tools.map((tool) => (
-        <div className="skill-container" key={tool.category}>
+    <div id="skills" className="skills container pd-1">
+      {skills.map((skill) => (
+        <div className="skill-container" key={skill.category}>
           <div className="skill-container-svg">
             <div>
-              <div>{tool.icon}</div>
+              <div>{skill.icon}</div>
             </div>
             <div>
-              <h3>{tool.category}</h3>
+              <h3>{skill.category}</h3>
             </div>
           </div>
 
           <div className="skill-card">
-            {tool.items.map((item) => (
+            {skill.items.map((item) => (
               <div key={item.name}>
                 <div className="skill">{item.name}</div>
               </div>

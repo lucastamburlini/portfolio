@@ -1,9 +1,24 @@
-import { listProjects } from "../../assets/data";
 import CodeIcon from "@mui/icons-material/Code";
 import LanguageIcon from "@mui/icons-material/Language";
+
 import "./projects.css";
+import { useSelector } from "react-redux";
+import translations from "../../assets/translations";
 
 const Projects = () => {
+  const currentLanguage = useSelector((state) => state.language);
+
+  const listProjects = [
+    {
+      id: 1,
+      title: translations[currentLanguage].project_title,
+      description: translations[currentLanguage].description,
+      img: "/portfolio.jpg",
+      url: "https://lucastamburliniold.vercel.app/",
+      gh: "https://github.com/lucastamburlini/portfolio-viejo.git",
+    },
+  ];
+
   return (
     <div id="projects" className="projects container pd-1">
       <h2>Projects</h2>

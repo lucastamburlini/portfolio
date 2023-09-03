@@ -17,7 +17,6 @@
   margin-bottom: -20px;
 }
 
-
 .contact ul {
   display: flex;
   justify-content: center;
@@ -35,4 +34,21 @@
 
 .contact svg:hover {
   color: var(--primary-color);
+}
+
+.divider {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.divider span {
+  content: "";
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100px;
+  height: 3px;
+  margin-top: 25px;
+  background-color: var(--primary-color);
 }

@@ -29,8 +29,8 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#technologies" onClick={handleClick}>
-                  Technologies
+                <a href="#skills" onClick={handleClick}>
+                  Skills
                 </a>
               </li>
               <li>

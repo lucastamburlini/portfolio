@@ -1,17 +1,23 @@
-import "./footer.css";
+import { useSelector } from "react-redux";
+
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 
+import "./footer.css";
+import translations from "../../assets/translations";
+
 const Footer = () => {
+  const currentLanguage = useSelector((state) => state.language);
+
   return (
     <div className="footer container pd-1">
       <div className="logo">
         <img src="/logoWhiteLarge.png" alt="logo_white_large.png" />
       </div>
       <div className="phrase pd-1">
-        <p>Every day, growing, learning, and progressing one step at a time.</p>
+        <p>{translations[currentLanguage].footer_text_I}</p>
       </div>
       <div className="pd-0">
         <ul>
@@ -45,7 +51,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="copyright pd-0">
-        Handcrafted by me
+      {translations[currentLanguage].footer_text_II}
         <CopyrightIcon />
         Lucas Tamburlini
       </div>
