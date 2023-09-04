@@ -11,12 +11,19 @@
   flex-direction: column;
   text-align: center;
   border: 1px solid var(--details-color);
-  padding: 18px;
+}
+
+.card-title h3 {
+  padding-bottom: 10px;
 }
 
 .card-img {
   height: 125px;
   width: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
 }
 
 .card-img img {
@@ -26,14 +33,49 @@
 }
 
 .card p {
-  padding: 8px;
+  padding-bottom: 10px;
 }
 
 .card-button {
   display: flex;
-  padding: 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 10px;
+  font-size: 10px;
 }
 
-.card-button div {
-  padding: 0 8px;
+.card-button-code {
+  display: flex;
+  gap: 20px;
+}
+
+.card-button a {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid var(--text-primary-color);
+  transition: all 0.2s ease-out;
+}
+
+.card-button a:hover {
+  color: var(--bg-color);
+  background-color: var(--text-primary-color);
+}
+
+.card-button svg {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.card-button svg:hover {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
 }
