@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import translations from "../../assets/translations";
 
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
-import LocalOfferIcon from "@mui/icons-material/LocalOffer";
+import TagIcon from "@mui/icons-material/Tag";
 
 import "./projects.css";
 
@@ -17,6 +17,7 @@ const Projects = () => {
       img: "/portfolio.jpg",
       url: "https://lucastamburliniold.vercel.app/",
       gh: "https://github.com/lucastamburlini/portfolio-viejo.git",
+      tags: ["React", "SCSS", "HTML"],
     },
   ];
 
@@ -36,9 +37,13 @@ const Projects = () => {
           </div>
 
           <div className="card-button">
-            <div>
-              Tag
-              <LocalOfferIcon />
+            <div className="card-button-tag">
+              {projects.tags.map((tag) => (
+                <div key={tag}>
+                  <TagIcon />
+                  {tag}
+                </div>
+              ))}
             </div>
             <div className="card-button-code">
               <a href={projects.url} target="_blank" rel="noreferrer">
