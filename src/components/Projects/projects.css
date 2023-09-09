@@ -82,6 +82,20 @@
   margin-right: 1px;
 }
 
+.card-tag {
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--bg-color-off);
+  border-radius: 30px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .card-button-code {
   display: flex;
   gap: 20px;

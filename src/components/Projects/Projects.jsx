@@ -39,7 +39,7 @@ const Projects = () => {
           <div className="card-button">
             <div className="card-button-tag">
               {projects.tags.map((tag) => (
-                <div key={tag}>
+                <div className="card-tag" key={tag}>
                   <TagIcon />
                   {tag}
                 </div>

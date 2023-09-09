@@ -16,11 +16,17 @@
   border-radius: 5px;
 }
 
-.skill-container-svg {
+.skill-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+
+.skill-container:hover h3 {
+  color: var(--primary-color);
+  transition: color 0.2s ease-out;
 }
 
 .skill-container svg {
@@ -42,13 +48,13 @@
   align-items: center;
   flex-wrap: wrap;
   font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--primary-color);
+  
   margin: 15px 10px;
   gap: 15px;
 }
 
 .skill {
+  font-weight: 600;
   width: 100%;
   display: flex;
   text-align: center;

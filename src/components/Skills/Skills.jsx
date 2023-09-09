@@ -60,7 +60,7 @@ const Skills = () => {
     <div id="skills" className="skills container pd-1">
       {skills.map((skill) => (
         <div className="skill-container" key={skill.category}>
-          <div className="skill-container-svg">
+          <div className="skill-title">
             <div>
               <div>{skill.icon}</div>
             </div>
