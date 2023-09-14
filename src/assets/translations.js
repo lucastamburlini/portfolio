@@ -12,8 +12,12 @@ const translations = {
 
     // Projects
     project_title: "Projects",
-    project: "Web Portfolio v1.0",
-    description: "Initial version of my personal web portfolio, built with React, Scss, and HTML. It creatively showcases my work and skills with a detail-oriented approach.",
+
+    // Projects Description
+    project_1: "Web Portfolio v1.0",
+    description_1: "Initial version of my personal web portfolio, built with React, Scss, and HTML. It creatively showcases my work and skills with a detail-oriented approach.",
+    project_2: "Rock, Paper or Scissor",
+    description_2: "Enjoy the classic Rock, Paper, Scissors game, created with HTML, CSS and JavaScript technologies. Have fun in an interactive way.",
 
     // Footer
 
@@ -37,8 +41,13 @@ const translations = {
 
     // Projects
     project_title: "Proyectos",
-    project: "Portfolio Web v1.0",
-    description: "Versión inicial de mi portafolio web personal, construido con React, Scss y HTML. Muestra creativamente mi trabajo y habilidades con un enfoque orientado a los detalles.",
+
+    // Projects Description
+    project_1: "Portfolio Web v1.0",
+    description_1: "Versión inicial de mi portafolio web personal, construido con React, Scss y HTML. Muestra creativamente mi trabajo y habilidades con un enfoque orientado a los detalles.",
+    project_2: "Piedra, Papel o Tijera",
+    description_2: "Disfruta del clásico juego Piedra, Papel o Tijera, creado con tecnologías HTML, CSS y JavaScript. Diviértete de forma interactiva.",
+    
 
     // Footer
 

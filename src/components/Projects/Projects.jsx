@@ -11,13 +11,22 @@ const Projects = () => {
 
   const listProjects = [
     {
+      id: 2,
+      title: translations[currentLanguage].project_2,
+      description: translations[currentLanguage].description_2,
+      img: "./src/assets/img/rps.jpg",
+      url: "https://rps-game-delta.vercel.app/",
+      gh: "https://github.com/lucastamburlini/rps-game",
+      tags: ["JavaScript", "HTML", "CSS"],
+    },
+    {
       id: 1,
-      title: translations[currentLanguage].project,
-      description: translations[currentLanguage].description,
-      img: "/portfolio.jpg",
+      title: translations[currentLanguage].project_1,
+      description: translations[currentLanguage].description_1,
+      img: "./src/assets/img/portfolio.jpg",
       url: "https://lucastamburliniold.vercel.app/",
       gh: "https://github.com/lucastamburlini/portfolio-viejo.git",
-      tags: ["React", "SCSS", "HTML"],
+      tags: ["React", "HTML", "SCSS"],
     },
   ];
 
