@@ -14,7 +14,7 @@ const Projects = () => {
       id: 2,
       title: translations[currentLanguage].project_2,
       description: translations[currentLanguage].description_2,
-      img: "/rps.jpg",
+      img: "src/assets/img/rps.jpg",
       url: "https://rps-game-delta.vercel.app/",
       gh: "https://github.com/lucastamburlini/rps-game",
       tags: ["JavaScript", "HTML", "CSS"],
