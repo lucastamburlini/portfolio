@@ -24,7 +24,11 @@ const skills = [
   {
     icon: <StorageIcon />,
     category: "Back End",
-    items: [{ name: "Node.js" }, { name: "Express" }, { name: "MongoDB" }],
+    items: [
+      { name: "Node.js" }, 
+      { name: "Express" }, 
+      { name: "MongoDB" }
+    ],
   },
   {
     icon: <LayersIcon />,
@@ -41,6 +45,7 @@ const skills = [
     items: [
       { name: "Exploratory Testing" },
       { name: "Conventional Testing Methodologies" },
+      { name: "Jest" },
     ],
   },
   {
@@ -52,7 +57,7 @@ const skills = [
       { name: "Thunder Client" },
       { name: "Trello" },
       { name: "Agile Methodologies" },
-      { name: "Git Hub" },
+      { name: "GitHub" },
     ],
   },
 ];

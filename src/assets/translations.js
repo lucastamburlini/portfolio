@@ -18,7 +18,8 @@ const translations = {
     description_1: "Initial version of my personal web portfolio, built with React, Scss, and HTML. It creatively showcases my work and skills with a detail-oriented approach.",
     project_2: "Rock, Paper or Scissor",
     description_2: "Enjoy the classic Rock, Paper, Scissors game, created with HTML, CSS and JavaScript technologies. Have fun in an interactive way.",
-
+    project_3: "Enigma",
+    description_3: "Explore a numerical riddle game. Developed with HTML, CSS, and JavaScript technologies, this challenge will put you to the test as you attempt to decipher the secret number.",
     // Footer
 
     footer_text_I: "Every day, growing, learning, and progressing one step at a time.",
@@ -47,11 +48,12 @@ const translations = {
     description_1: "Versión inicial de mi portafolio web personal, construido con React, Scss y HTML. Muestra creativamente mi trabajo y habilidades con un enfoque orientado a los detalles.",
     project_2: "Piedra, Papel o Tijera",
     description_2: "Disfruta del clásico juego Piedra, Papel o Tijera, creado con tecnologías HTML, CSS y JavaScript. Diviértete de forma interactiva.",
-    
+    project_3: "Enigma",
+    description_3: "Explora un juego de adivinanza numérica. Desarrollado con las tecnologías de HTML, CSS y JavaScript, este desafío te pondrá a prueba mientras intentas descifrar el número secreto."
 
-    // Footer
+      // Footer
 
-    footer_text_I: "Cada día, creciendo, aprendiendo y progresando paso a paso.",
+      footer_text_I: "Cada día, creciendo, aprendiendo y progresando paso a paso.",
     footer_text_II: "Hecho a mano por "
   }
 };

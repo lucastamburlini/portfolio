@@ -11,6 +11,15 @@ const Projects = () => {
 
   const listProjects = [
     {
+      id: 3,
+      title: translations[currentLanguage].project_3,
+      description: translations[currentLanguage].description_3,
+      img: "/enigma.jpg",
+      url: "https://enigma-beryl.vercel.app/",
+      gh: "https://github.com/lucastamburlini/enigma",
+      tags: ["JavaScript", "HTML", "CSS"],
+    },
+    {
       id: 2,
       title: translations[currentLanguage].project_2,
       description: translations[currentLanguage].description_2,
