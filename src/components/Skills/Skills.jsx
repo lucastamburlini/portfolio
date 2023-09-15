@@ -49,8 +49,10 @@ const skills = [
     items: [
       { name: "Jira" },
       { name: "Postman" },
+      { name: "Thunder Client" },
       { name: "Trello" },
       { name: "Agile Methodologies" },
+      { name: "Git Hub" },
     ],
   },
 ];
