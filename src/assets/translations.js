@@ -49,11 +49,11 @@ const translations = {
     project_2: "Piedra, Papel o Tijera",
     description_2: "Disfruta del clásico juego Piedra, Papel o Tijera, creado con tecnologías HTML, CSS y JavaScript. Diviértete de forma interactiva.",
     project_3: "Enigma",
-    description_3: "Explora un juego de adivinanza numérica. Desarrollado con las tecnologías de HTML, CSS y JavaScript, este desafío te pondrá a prueba mientras intentas descifrar el número secreto."
+    description_3: "Explora un juego de adivinanza numérica. Desarrollado con las tecnologías de HTML, CSS y JavaScript, este desafío te pondrá a prueba mientras intentas descifrar el número secreto.",
 
-      // Footer
+    // Footer
 
-      footer_text_I: "Cada día, creciendo, aprendiendo y progresando paso a paso.",
+    footer_text_I: "Cada día, creciendo, aprendiendo y progresando paso a paso.",
     footer_text_II: "Hecho a mano por "
   }
 };
