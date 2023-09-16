@@ -53,6 +53,7 @@ const Projects = () => {
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
+    setActiveTag(newFilter);
   };
 
   return (
@@ -61,17 +62,35 @@ const Projects = () => {
 
       <div className="filterButton">
         <button
-          className={activeTag === "all" ? "active" : ""}
+          className={activeTag === "All" ? "active" : ""}
           onClick={() => handleFilterChange("All")}
         >
           {translations[currentLanguage].button_all}
         </button>
-        <button onClick={() => handleFilterChange("JavaScript")}>
+        <button
+          className={activeTag === "JavaScript" ? "active" : ""}
+          onClick={() => handleFilterChange("JavaScript")}
+        >
           JavaScript
         </button>
-        <button onClick={() => handleFilterChange("React")}>React</button>
-        <button onClick={() => handleFilterChange("HTML")}>HTML</button>
-        <button onClick={() => handleFilterChange("CSS")}>CSS</button>
+        <button
+          className={activeTag === "React" ? "active" : ""}
+          onClick={() => handleFilterChange("React")}
+        >
+          React
+        </button>
+        <button
+          className={activeTag === "HTML" ? "active" : ""}
+          onClick={() => handleFilterChange("HTML")}
+        >
+          HTML
+        </button>
+        <button
+          className={activeTag === "CSS" ? "active" : ""}
+          onClick={() => handleFilterChange("CSS")}
+        >
+          CSS
+        </button>
       </div>
 
       {listProjects.map(
