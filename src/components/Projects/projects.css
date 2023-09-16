@@ -5,6 +5,17 @@
   gap: 25px;
 }
 
+.filterButton button {
+  margin: 5px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--text-secondary-color);
+  padding: 4px;
+  font-size: 10px;
+  border: 1px solid var(--text-secondary-color);
+  border-radius: 5px;
+}
+
 .card {
   display: flex;
   justify-content: center;
@@ -14,7 +25,7 @@
   border: 1px solid var(--details-color);
   border-radius: 5px;
   transition: all 0.2s ease-out;
-  padding: 25px;
+  padding: 15px;
 }
 
 .card:hover {
@@ -26,7 +37,7 @@
 }
 
 .card-title h3 {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .card-img {
@@ -46,7 +57,7 @@
 }
 
 .card p {
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .card-button {
@@ -54,8 +65,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 15px;
-  gap: 10px;
+  padding-top: 20px;
+  gap: 20px;
   font-size: 10px;
 }
 
@@ -110,7 +121,7 @@
   justify-content: center;
   padding: 4px;
   border-radius: 5px;
-  border: 1px solid var(--text-primary-color);
+  border: 1px solid var(--text-secondary-color);
   transition: all 0.2s ease-out;
 }
 

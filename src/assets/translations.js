@@ -12,14 +12,17 @@ const translations = {
 
     // Projects
     project_title: "Projects",
+    button_all: "All",
 
     // Projects Description
-    project_1: "Web Portfolio v1.0",
-    description_1: "Initial version of my personal web portfolio, built with React, Scss, and HTML. It creatively showcases my work and skills with a detail-oriented approach.",
-    project_2: "Rock, Paper or Scissor",
-    description_2: "Enjoy the classic Rock, Paper, Scissors game, created with HTML, CSS and JavaScript technologies. Have fun in an interactive way.",
-    project_3: "Enigma",
-    description_3: "Explore a numerical riddle game. Developed with HTML, CSS, and JavaScript technologies, this challenge will put you to the test as you attempt to decipher the secret number.",
+    project_taskManager: "Task Manager",
+    description_taskManager: "My first web project, a basic to-do list using JavaScript, HTML, and CSS. My initial steps into web development.",
+    project_portfolio: "Web Portfolio v1.0",
+    description_portfolio: "Initial version of my personal web portfolio, built with React, Scss, and HTML. It creatively showcases my work and skills with a detail-oriented approach.",
+    project_rps: "Rock, Paper or Scissor",
+    description_rps: "Enjoy the classic Rock, Paper, Scissors game, created with HTML, CSS and JavaScript technologies. Have fun in an interactive way.",
+    project_enigma: "Enigma",
+    description_enigma: "Explore a numerical riddle game. Developed with HTML, CSS, and JavaScript technologies, this challenge will put you to the test as you attempt to decipher the secret number.",
     // Footer
 
     footer_text_I: "Every day, growing, learning, and progressing one step at a time.",
@@ -42,14 +45,17 @@ const translations = {
 
     // Projects
     project_title: "Proyectos",
+    button_all: "Todos",
 
     // Projects Description
-    project_1: "Portfolio Web v1.0",
-    description_1: "Versión inicial de mi portafolio web personal, construido con React, Scss y HTML. Muestra creativamente mi trabajo y habilidades con un enfoque orientado a los detalles.",
-    project_2: "Piedra, Papel o Tijera",
-    description_2: "Disfruta del clásico juego Piedra, Papel o Tijera, creado con tecnologías HTML, CSS y JavaScript. Diviértete de forma interactiva.",
-    project_3: "Enigma",
-    description_3: "Explora un juego de adivinanza numérica. Desarrollado con las tecnologías de HTML, CSS y JavaScript, este desafío te pondrá a prueba mientras intentas descifrar el número secreto.",
+    project_taskManager: "Task Manager",
+    description_taskManager: "Mi primer proyecto web, una simple lista de tareas con JavaScript, HTML y CSS. Mis primeros pasos en el desarrollo web.",
+    project_portfolio: "Portfolio Web v1.0",
+    description_portfolio: "Versión inicial de mi portafolio web personal, construido con React, Scss y HTML. Muestra creativamente mi trabajo y habilidades con un enfoque orientado a los detalles.",
+    project_rps: "Piedra, Papel o Tijera",
+    description_rps: "Disfruta del clásico juego Piedra, Papel o Tijera, creado con tecnologías HTML, CSS y JavaScript. Diviértete de forma interactiva.",
+    project_enigma: "Enigma",
+    description_enigma: "Explora un juego de adivinanza numérica. Desarrollado con las tecnologías de HTML, CSS y JavaScript, este desafío te pondrá a prueba mientras intentas descifrar el número secreto.",
 
     // Footer
 
