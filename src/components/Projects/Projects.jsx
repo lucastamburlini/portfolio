@@ -95,6 +95,12 @@ const Projects = () => {
         >
           CSS
         </button>
+        <button
+          className={activeTag === "SCSS" ? "active" : ""}
+          onClick={() => handleFilterChange("SCSS")}
+        >
+          SCSS
+        </button>
       </div>
 
       {listProjects.map(
