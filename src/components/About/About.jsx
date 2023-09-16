@@ -10,6 +10,8 @@ const About = () => {
       <h2>{translations[currentLanguage].about_title}</h2>
       <p>{translations[currentLanguage].about_text_I}</p> <br />
       <p>{translations[currentLanguage].about_text_II}</p>
+      <br />
+      <p>{translations[currentLanguage].about_text_III}</p>
     </div>
   );
 };

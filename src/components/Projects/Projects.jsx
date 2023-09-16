@@ -60,6 +60,10 @@ const Projects = () => {
     <div id="projects" className="projects container pd-1">
       <h2>{translations[currentLanguage].project_title}</h2>
 
+      <div>
+        <p>{translations[currentLanguage].project_description}</p>
+      </div>
+
       <div className="filterButton">
         <button
           className={activeTag === "All" ? "active" : ""}
