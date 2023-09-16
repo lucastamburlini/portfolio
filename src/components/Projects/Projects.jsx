@@ -58,49 +58,50 @@ const Projects = () => {
 
   return (
     <div id="projects" className="projects container pd-1">
-      <h2>{translations[currentLanguage].project_title}</h2>
-
       <div>
-        <p>{translations[currentLanguage].project_description}</p>
-      </div>
+        <h2>{translations[currentLanguage].project_title}</h2>
+        <div>
+          <p>{translations[currentLanguage].project_description}</p>
+        </div>
 
-      <div className="filterButton">
-        <button
-          className={activeTag === "All" ? "active" : ""}
-          onClick={() => handleFilterChange("All")}
-        >
-          {translations[currentLanguage].button_all}
-        </button>
-        <button
-          className={activeTag === "JavaScript" ? "active" : ""}
-          onClick={() => handleFilterChange("JavaScript")}
-        >
-          JavaScript
-        </button>
-        <button
-          className={activeTag === "React" ? "active" : ""}
-          onClick={() => handleFilterChange("React")}
-        >
-          React
-        </button>
-        <button
-          className={activeTag === "HTML" ? "active" : ""}
-          onClick={() => handleFilterChange("HTML")}
-        >
-          HTML
-        </button>
-        <button
-          className={activeTag === "CSS" ? "active" : ""}
-          onClick={() => handleFilterChange("CSS")}
-        >
-          CSS
-        </button>
-        <button
-          className={activeTag === "SCSS" ? "active" : ""}
-          onClick={() => handleFilterChange("SCSS")}
-        >
-          SCSS
-        </button>
+        <div className="filterButton">
+          <button
+            className={activeTag === "All" ? "active" : ""}
+            onClick={() => handleFilterChange("All")}
+          >
+            {translations[currentLanguage].button_all}
+          </button>
+          <button
+            className={activeTag === "JavaScript" ? "active" : ""}
+            onClick={() => handleFilterChange("JavaScript")}
+          >
+            JavaScript
+          </button>
+          <button
+            className={activeTag === "React" ? "active" : ""}
+            onClick={() => handleFilterChange("React")}
+          >
+            React
+          </button>
+          <button
+            className={activeTag === "HTML" ? "active" : ""}
+            onClick={() => handleFilterChange("HTML")}
+          >
+            HTML
+          </button>
+          <button
+            className={activeTag === "CSS" ? "active" : ""}
+            onClick={() => handleFilterChange("CSS")}
+          >
+            CSS
+          </button>
+          <button
+            className={activeTag === "SCSS" ? "active" : ""}
+            onClick={() => handleFilterChange("SCSS")}
+          >
+            SCSS
+          </button>
+        </div>
       </div>
 
       {listProjects.map(
