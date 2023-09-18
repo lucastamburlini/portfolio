@@ -11,7 +11,7 @@ const Home = () => {
   const currentLanguage = useSelector((state) => state.language);
 
   return (
-    <div className="container pd-1">
+    <div className="home container pd-1">
       <div className="title">
         <h1>
           {translations[currentLanguage].title} <span>Lucas Tamburlini</span>
