@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div className="container pd-1">
-      <div className="title ">
+      <div className="title">
         <h1>
           {translations[currentLanguage].title} <span>Lucas Tamburlini</span>
         </h1>
