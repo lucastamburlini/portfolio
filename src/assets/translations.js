@@ -11,6 +11,9 @@ const translations = {
     about_text_II: "After finishing my degree, I discovered my true vocation as a developer and graduated as a Full Stack Web Developer at Henry, where I acquired the necessary skills to work in the world of technology. On the other hand, I also specialized in search and selection of talent at the Universidad Tecnologica Nacional and as an IT Recruiter at Staffy.",
     about_text_III:"In the following section, you will find the technologies I use to develop.",
 
+    // Experiences
+    experiences_title: "Experiences",
+
     // Projects
     project_title: "Projects",
     project_description: "I invite you to explore my online portfolio and dive into my web projects. Discover how I apply these technologies to create online experiences. Use the tag filter to select a technology and see the projects that match your interests and technology skills.",
@@ -45,6 +48,9 @@ const translations = {
     about_text_I: "Apasionado por la tecnología y la programación, nací el 3 de junio de 1991 en Concepción del Uruguay, Entre Ríos, Argentina, y me recibí en la Universidad de Belgrano como Analista Universitario en Gestión de Capital Humano en 2022.",
     about_text_II: "Luego de terminar la carrera, descubrí mi verdadera vocación como desarrollador y me gradué como Full Stack Web Developer en Henry, donde adquirí las habilidades necesarias para trabajar en el mundo de la tecnología. Por otro lado, también me especialicé en búsqueda y selección de talento en la Universidad Tecnológica Nacional y como IT Recruiter en Staffy.",
     about_text_III:"En la siguiente sección, encontrarás las tecnologías que utilizo para desarrollar.",
+
+    // Experiences
+    experiences_title: "Experiencias",
 
     // Projects
     project_title: "Proyectos",
