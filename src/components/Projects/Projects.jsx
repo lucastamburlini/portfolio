@@ -1,11 +1,19 @@
 import { useSelector } from "react-redux";
 import translations from "../../assets/translations";
+import { useState } from "react";
 
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import TagIcon from "@mui/icons-material/Tag";
 
 import "./projects.css";
-import { useState } from "react";
+
+// import imgPokeApi from '../../assets/pokeapi.jpg'
+// import imgRickMorty from '../../assets/rickandmorty.jpg'
+import imgEnigma from '../../assets/enigma.jpg'
+import imgRps from '../../assets/rps.jpg'
+import imgPortfolio from '../../assets/portfolio.jpg'
+import imgTaskManager from '../../assets/taskManager.jpg'
+
 
 const Projects = () => {
   const currentLanguage = useSelector((state) => state.language);
@@ -17,7 +25,7 @@ const Projects = () => {
       id: 4,
       title: translations[currentLanguage].project_enigma,
       description: translations[currentLanguage].description_enigma,
-      img: "/enigma.jpg",
+      img: imgEnigma,
       url: "https://enigma-beryl.vercel.app/",
       gh: "https://github.com/lucastamburlini/enigma",
       tags: ["JavaScript", "HTML", "CSS"],
@@ -26,7 +34,7 @@ const Projects = () => {
       id: 3,
       title: translations[currentLanguage].project_rps,
       description: translations[currentLanguage].description_rps,
-      img: "/rps.jpg",
+      img: imgRps,
       url: "https://rps-game-delta.vercel.app/",
       gh: "https://github.com/lucastamburlini/rps-game",
       tags: ["JavaScript", "HTML", "CSS"],
@@ -35,7 +43,7 @@ const Projects = () => {
       id: 2,
       title: translations[currentLanguage].project_portfolio,
       description: translations[currentLanguage].description_portfolio,
-      img: "/portfolio.jpg",
+      img: imgPortfolio,
       url: "https://lucastamburliniold.vercel.app/",
       gh: "https://github.com/lucastamburlini/portfolio-viejo.git",
       tags: ["React", "HTML", "SCSS"],
@@ -44,7 +52,7 @@ const Projects = () => {
       id: 1,
       title: translations[currentLanguage].project_taskManager,
       description: translations[currentLanguage].description_taskManager,
-      img: "/taskManager.jpg",
+      img: imgTaskManager,
       url: "https://task-manager-one-ochre.vercel.app/",
       gh: "https://github.com/lucastamburlini/TaskManager",
       tags: ["JavaScript", "HTML", "CSS"],

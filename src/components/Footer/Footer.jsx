@@ -4,9 +4,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import CopyrightIcon from "@mui/icons-material/Copyright";
+import translations from "../../assets/translations";
 
 import "./footer.css";
-import translations from "../../assets/translations";
 
 const Footer = () => {
   const currentLanguage = useSelector((state) => state.language);
