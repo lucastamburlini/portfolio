@@ -3,6 +3,7 @@ import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch.jsx";
+import logoWhiteLarge from "../../assets/logoWhiteLarge.png";
 
 import "../Navbar/navbar.css";
 
@@ -16,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="navbar container">
       <div className="navbar-logo">
-        <img src="/logoWhiteLarge.png" alt="logo_white_large.png" />
+        <img src={logoWhiteLarge} alt="logo_white_large.png" />
       </div>
       <div className="navbar-assets">
         <LanguageSwitch />

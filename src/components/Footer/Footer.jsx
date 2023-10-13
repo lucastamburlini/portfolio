@@ -5,6 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import translations from "../../assets/translations";
+import logoWhiteLarge from "../../assets/logoWhiteLarge.png";
 
 import "./footer.css";
 
@@ -14,7 +15,7 @@ const Footer = () => {
   return (
     <div className="footer container pd-1">
       <div className="logo">
-        <img src="/logoWhiteLarge.png" alt="logo_white_large.png" />
+        <img src={logoWhiteLarge} alt="logo_white_large.png" />
       </div>
       <div className="phrase pd-1">
         <p>{translations[currentLanguage].footer_text_I}</p>
