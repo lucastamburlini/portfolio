@@ -1,3 +1,6 @@
+.home {
+  padding: var(--pd-1);
+}
 .title {
   text-align: center;
   flex-direction: column;
@@ -9,7 +12,11 @@
 }
 
 .title h1 {
-  background: linear-gradient(315deg, var(--text-primary-color) 0%, var(--text-secondary-color) 75%);
+  background: linear-gradient(
+    315deg,
+    var(--text-primary-color) 0%,
+    var(--text-secondary-color) 75%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
