@@ -1,19 +1,25 @@
-.navbar {
+nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: auto;
-  padding: 32px 0;
+  padding: var(--pd-1);
+  position: fixed;
+  background-color: var(--bg-color);
+}
+
+nav img {
+  width: 38px;
+}
+
+.navContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbarLogo {
   display: flex;
   align-items: center;
-}
-
-.navbar img {
-  width: 38px;
 }
 
 .navbarAssets {
