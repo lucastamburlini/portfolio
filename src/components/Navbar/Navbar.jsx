@@ -5,7 +5,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch.jsx";
 import logoWhiteLarge from "../../assets/logoWhiteLarge.png";
 
-import "../Navbar/navbar.css";
+import style from "../Navbar/Navbar.module.css";
+import styleApp from "../../App.module.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -15,13 +16,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar container">
-      <div className="navbar-logo">
+    <nav className={style.navbar + " " + styleApp.container}>
+      <div className={style.navbarLogo}>
         <img src={logoWhiteLarge} alt="logo_white_large.png" />
       </div>
-      <div className="navbar-assets">
+      <div className={style.navbarAssets}>
         <LanguageSwitch />
-        <div className={`navbar-links ${open ? "active" : ""}`}>
+        <div className={`${style.navbarLinks} ${open ? style.active : ""}`}>
           <div>
             <ul>
               <li>
@@ -42,11 +43,11 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="navbar-toggle" onClick={handleClick}>
+        <div className={style.navbarToggle} onClick={handleClick}>
           {open ? (
-            <CloseIcon className="menu-close" />
+            <CloseIcon className={style.menuClose} />
           ) : (
-            <MenuIcon className="menu-open" />
+            <MenuIcon className={style.menuOpen} />
           )}
         </div>
       </div>
