@@ -2,13 +2,18 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: var(--pd-1);
+  padding: var(--pd-0);
   position: fixed;
   background-color: var(--bg-color);
+  transition: box-shadow 0.1s ease 0s, background-color 0.1s ease 0s;
 }
 
 nav img {
   width: 38px;
+}
+
+.scrolled {
+  box-shadow: inset 0 -1px 0 0 hsla(0,0%,100%,.1);
 }
 
 .navContainer {
@@ -25,6 +30,7 @@ nav img {
 .navbarAssets {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .navbarLinks {
@@ -45,9 +51,14 @@ nav img {
   transition: height 0.3s ease, opacity 0.3s ease;
 }
 
+.navbarLinks li a:hover {
+  color: var(--hover-secondary);
+}
+
 .navbarLinks.active {
   height: 60%;
   opacity: 1;
+  height: 100vh;
 }
 
 .navbarLinks.active li {
@@ -57,10 +68,6 @@ nav img {
 .navbarLinks.active li a {
   font-weight: bold;
   transition: all 0.2s ease-out;
-}
-
-.navbarLinks.active li a:hover {
-  color: var(--hover-secondary);
 }
 
 .navbarToggle {
@@ -95,7 +102,6 @@ nav img {
 @media screen and (min-width: 768px) {
   .navbarLinks {
     display: flex;
-    height: auto;
     opacity: 1;
     position: relative;
   }

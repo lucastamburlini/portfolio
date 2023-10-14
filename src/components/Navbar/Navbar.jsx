@@ -10,6 +10,7 @@ import styleApp from "../../App.module.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -26,11 +27,25 @@ const Navbar = () => {
   }, [open]);
 
   const handleClick = () => {
-    setOpen(!open);
+    if (window.innerWidth <= 768) {
+      setOpen(!open);
+    }
   };
 
+  useEffect(() => {
+    const hanldeScroll = () => {
+      window.scrollY > 100 ? setScrolled(true) : setScrolled(false);
+    };
+
+    window.addEventListener("scroll", hanldeScroll);
+
+    return () => {
+      window.removeEventListener("scroll", hanldeScroll);
+    };
+  }, []);
+
   return (
-    <nav>
+    <nav className={`${scrolled ? style.scrolled : ""}`}>
       <div className={styleApp.container + " " + style.navContainer}>
         <div className={style.navbarLogo}>
           <img src={logoWhiteLarge} alt="logo_white_large.png" />
