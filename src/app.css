@@ -7,35 +7,25 @@
 
 /* global configuration */
 :root {
-  --bg-color: #262335;
-  --bg-color-off: rgba(69, 40, 233, 0.1);
+  --bg-color: #000000;
+  --bg-color-off: #1A1A1A;
   --text-primary-color: #ffffff;
   --text-secondary-color: #c6c6c6;
   --primary-color: #ffff00;
   --font-family-base: "Plus Jakarta Sans", sans-serif;
   --font-size-base: 1.5625rem;
+
+  --pd-0: 16px 0;
+  --pd-1: 32px 0;
+  --pd-2: 64px 0;
+
+  --fs-h1: clamp(var(--font-size-base), 0.2717rem + 5.163vw, 2.75rem);
+  --fs-h2: clamp(1.125rem, 2.625vw + 0.875rem, 1.625rem);
+  --fs-h3: clamp(1.0625rem, 2.625vw + 0.875rem, 1.2125rem);
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-/* Font sizes */
-
-body {
-  font-size: (var(--font-size-base));
-}
-
-h1 {
-  font-size: clamp(var(--font-size-base), 0.2717rem + 5.163vw, 2.75rem);
-}
-
-h2 {
-  font-size: clamp(1.125rem, 2.625vw + 0.875rem, 1.625rem);
-}
-
-h3 {
-  font-size: clamp(1.0625rem, 2.625vw + 0.875rem, 1.2125rem);
 }
 
 /* General styles */
@@ -46,21 +36,6 @@ body {
   background-color: var(--bg-color);
 }
 
-h1 {
-  color: var(--text-primary-color);
-  text-rendering: optimizeLegibility;
-}
-
-h2 {
-  color: var(--text-primary-color);
-  text-decoration: none;
-  margin-bottom: 32px;
-}
-
-h3 {
-  color: var(--text-primary-color);
-}
-
 li {
   list-style: none;
 }
@@ -69,18 +44,6 @@ a {
   text-decoration: none;
   color: var(--text-primary-color);
   font-weight: 600;
-}
-
-.pd-0 {
-  padding: 16px 0;
-}
-
-.pd-1 {
-  padding: 32px 0;
-}
-
-.pd-2 {
-  padding: 64px 0;
 }
 
 .container {
