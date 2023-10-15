@@ -1,10 +1,9 @@
 import LayersIcon from "@mui/icons-material/Layers";
 import TerminalIcon from "@mui/icons-material/Terminal";
 import StorageIcon from "@mui/icons-material/Storage";
-import BugReportIcon from "@mui/icons-material/BugReport";
 import BuildIcon from "@mui/icons-material/Build";
 
-import "./skills.css";
+import style from "./Skills.module.css";
 
 const skills = [
   {
@@ -16,19 +15,12 @@ const skills = [
       { name: "JavaScript" },
       { name: "React" },
       { name: "Redux" },
-      { name: "Sass" },
-      { name: "Bootstrap" },
-      { name: "Material UI" },
     ],
   },
   {
     icon: <StorageIcon />,
     category: "Back End",
-    items: [
-      { name: "Node.js" }, 
-      { name: "Express" }, 
-      { name: "MongoDB" }
-    ],
+    items: [{ name: "Node.js" }, { name: "Express" }, { name: "MongoDB" }],
   },
   {
     icon: <LayersIcon />,
@@ -40,46 +32,33 @@ const skills = [
     ],
   },
   {
-    icon: <BugReportIcon />,
-    category: "Testing",
+    icon: <BuildIcon />,
+    category: "Testing and Additional Tools",
     items: [
+      { name: "Agile Methodologies" },
       { name: "Exploratory Testing" },
       { name: "Conventional Testing Methodologies" },
       { name: "Jest" },
-    ],
-  },
-  {
-    icon: <BuildIcon />,
-    category: "Additional Tools",
-    items: [
-      { name: "Jira" },
-      { name: "Postman" },
-      { name: "Thunder Client" },
-      { name: "Trello" },
-      { name: "Agile Methodologies" },
-      { name: "GitHub" },
     ],
   },
 ];
 
 const Skills = () => {
   return (
-    <div id="skills" className="skills container pd-1">
+    <div id="skills" className={style.skills}>
       {skills.map((skill) => (
-        <div className="skill-container" key={skill.category}>
-          <div className="skill-title">
-            <div>
-              <div>{skill.icon}</div>
-            </div>
+        <div className={style.skillContainer} key={skill.category}>
+          <div className={style.skillTitle}>
+            <div className={style.skillTitleSvg}>{skill.icon}</div>
             <div>
               <h3>{skill.category}</h3>
             </div>
           </div>
 
-          <div className="skill-card">
+          <div className={style.skillCard}>
             {skill.items.map((item) => (
               <div key={item.name}>
-                <div className="skill">{item.name}</div>
+                <div className={style.skill}>{item.name}</div>
               </div>
             ))}
           </div>
