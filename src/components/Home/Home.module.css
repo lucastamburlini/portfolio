@@ -18,23 +18,8 @@
 
 .title h1 {
   font-size: var(--fs-h1);
-  background: linear-gradient(
-    315deg,
-    var(--text-primary-color) 0%,
-    var(--text-secondary-color) 75%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  transition: background-position 0.3s ease;
-  background-size: 200% 100%;
-  background-position: left center;
   line-height: 1.8;
-}
-
-.title h1:hover {
-  background-position: right center;
-  transition: background-position 0.3s ease;
+  color: var(--text-primary-color);
 }
 
 .title h1 span {
