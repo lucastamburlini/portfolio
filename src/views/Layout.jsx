@@ -5,9 +5,11 @@ import Home from "../components/Home/Home";
 import Projects from "../components/Projects/Projects";
 import Skills from "../components/Skills/Skills";
 
+import styleApp from "../App.module.css";
+
 const Layout = () => {
   return (
-    <div>
+    <div className={styleApp.container}>
       <Home />
       <About />
       <Skills />

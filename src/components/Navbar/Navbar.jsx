@@ -14,7 +14,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 768 && open) {
+      if (window.innerWidth < 768 && open) {
         setOpen(false);
       }
     };
@@ -27,7 +27,7 @@ const Navbar = () => {
   }, [open]);
 
   const handleClick = () => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth < 768) {
       setOpen(!open);
     }
   };

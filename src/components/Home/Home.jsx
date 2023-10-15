@@ -6,13 +6,12 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 import style from "./Home.module.css";
-import styleApp from "../../App.module.css";
 
 const Home = () => {
   const currentLanguage = useSelector((state) => state.language);
 
   return (
-    <div className={style.home + " " + styleApp.container}>
+    <div className={style.home}>
       <div className={style.title}>
         <h1>
           {translations[currentLanguage].title} <span>Lucas Tamburlini</span>
