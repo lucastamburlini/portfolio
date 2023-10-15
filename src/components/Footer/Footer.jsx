@@ -7,20 +7,20 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 import translations from "../../assets/translations";
 import logoWhiteLarge from "../../assets/logoWhiteLarge.png";
 
-import "./footer.css";
+import style from "./Footer.module.css";
 
 const Footer = () => {
   const currentLanguage = useSelector((state) => state.language);
 
   return (
-    <div className="footer container pd-1">
-      <div className="logo">
+    <div className={style.footer}>
+      <div className={style.logo}>
         <img src={logoWhiteLarge} alt="logo_white_large.png" />
       </div>
-      <div className="phrase pd-1">
+      <div className={style.phrase}>
         <p>{translations[currentLanguage].footer_text_I}</p>
       </div>
-      <div className="pd-0">
+      <div>
         <ul>
           <li>
             <a
@@ -51,8 +51,8 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="copyright pd-0">
-      {translations[currentLanguage].footer_text_II}
+      <div className={style.copyright}>
+        {translations[currentLanguage].footer_text_II}
         <CopyrightIcon />
         Lucas Tamburlini
       </div>
