@@ -19,7 +19,7 @@
   --pd-1: 32px 0;
   --pd-2: 64px 0;
 
-  --fs-h1: clamp(var(--font-size-base), 0.2717rem + 5.163vw, 2.75rem);
+  --fs-h1: clamp(var(--font-size-base), 0.2717rem + 5.163vw, 3.5rem);
   --fs-h2: clamp(1.125rem, 2.625vw + 0.875rem, 1.625rem);
   --fs-h3: clamp(1.0625rem, 2.625vw + 0.875rem, 1.2125rem);
 

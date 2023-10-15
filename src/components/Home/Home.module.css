@@ -1,5 +1,10 @@
 .home {
   padding: var(--pd-1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .title {
   text-align: center;
@@ -7,11 +12,12 @@
 }
 
 .title p {
-  padding: 24px 0;
+  padding: var(--pd-1);
   line-height: 1.4;
 }
 
 .title h1 {
+  font-size: var(--fs-h1);
   background: linear-gradient(
     315deg,
     var(--text-primary-color) 0%,
@@ -23,6 +29,7 @@
   transition: background-position 0.3s ease;
   background-size: 200% 100%;
   background-position: left center;
+  line-height: 1.8;
 }
 
 .title h1:hover {
@@ -52,22 +59,4 @@
 
 .contact svg:hover {
   color: var(--primary-color);
-}
-
-.divider {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.divider span {
-  border-radius: 5px;
-  content: "";
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 100px;
-  height: 3px;
-  margin-top: 25px;
-  background-color: var(--primary-color);
 }

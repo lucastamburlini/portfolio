@@ -23,7 +23,7 @@ const Home = () => {
           {translations[currentLanguage].introduction_II}
         </p>
       </div>
-      <div className="contact pd-0">
+      <div className={style.contact}>
         <ul>
           <li>
             <a
@@ -53,9 +53,6 @@ const Home = () => {
             </a>
           </li>
         </ul>
-      </div>
-      <div className="divider">
-        <span></span>
       </div>
     </div>
   );
