@@ -1,21 +1,15 @@
 .skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  width: 100%;
+  gap: 30px;
 }
 
 .skillContainer {
-  max-width: 200px;
-  height: 250px;
-  text-align: center;
+  width: 100%;
 }
 
 .skillTitle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 15px;
 }
 
@@ -31,8 +25,8 @@
 
 .skillCard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
