@@ -1,12 +1,15 @@
 .skillsContainer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   width: 100%;
   gap: 30px;
-  padding: var(--pd-1);
 }
 
 .skillsTitle {
+  height: auto;
   width: 100%;
 }
 
@@ -89,7 +92,7 @@
 
 .itemContainer div {
   background-color: var(--bg-color);
-  padding: 2px 5px;
+  padding: 4px 7px;
   border-radius: 5px;
   gap: 10px;
   font-size: 12px;
