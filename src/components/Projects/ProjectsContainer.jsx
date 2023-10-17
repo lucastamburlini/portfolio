@@ -5,8 +5,12 @@ import CardProject from "../CardProjects/CardProjects";
 
 import style from "./ProjectsContainer.module.css";
 
-// import imgPokeApi from '../../imgProjects/assets/pokeapi.jpg'
-// import imgRickMorty from '../../assets/imgProjects/rickandmorty.jpg'
+import imgPokeApi from "../../assets/imgProjects/pokeapi.jpg";
+import imgPokeApiLogo from "../../assets/imgLogos/pokeApi.png";
+
+import imgRickMorty from "../../assets/imgProjects/rickandmorty.jpg";
+import imgRickMortyLogo from "../../assets/imgLogos/rickAndMorty.png";
+
 import imgEnigma from "../../assets/imgProjects/enigma.jpg";
 import imgEnigmaLogo from "../../assets/imgLogos/enigma.png";
 
@@ -25,6 +29,26 @@ const Projects = () => {
   const [activeTag, setActiveTag] = useState("All");
 
   const listProjects = [
+    {
+      id: 6,
+      title: translations[currentLanguage].project_enigma,
+      description: translations[currentLanguage].description_enigma,
+      img: imgPokeApi,
+      url: "https://enigma-beryl.vercel.app/",
+      gh: "https://github.com/lucastamburlini/enigma",
+      tags: ["JavaScript", "HTML", "CSS"],
+      logo: imgPokeApiLogo,
+    },
+    {
+      id: 5,
+      title: translations[currentLanguage].project_enigma,
+      description: translations[currentLanguage].description_enigma,
+      img: imgRickMorty,
+      url: "https://enigma-beryl.vercel.app/",
+      gh: "https://github.com/lucastamburlini/enigma",
+      tags: ["JavaScript", "HTML", "CSS"],
+      logo: imgRickMortyLogo,
+    },
     {
       id: 4,
       title: translations[currentLanguage].project_enigma,

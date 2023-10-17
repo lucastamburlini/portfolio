@@ -1,6 +1,7 @@
 .projectsContainer {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   height: auto;
   background-color: var(--bg-color-off);
   padding: 16px;
