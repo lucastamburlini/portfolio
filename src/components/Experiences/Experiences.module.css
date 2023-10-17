@@ -1,0 +1,9 @@
+.experiencesContainer {
+    height: 100%;
+    width: 100%;
+    padding: var(--pd-1);
+}
+
+.experiencesContainer h2 {
+    padding: var(--pd-1);
+}

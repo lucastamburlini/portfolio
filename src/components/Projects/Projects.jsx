@@ -5,7 +5,7 @@ import { useState } from "react";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 import TagIcon from "@mui/icons-material/Tag";
 
-import "./projects.css";
+import style from "./Projects.module.css";
 
 // import imgPokeApi from '../../assets/pokeapi.jpg'
 // import imgRickMorty from '../../assets/rickandmorty.jpg'
@@ -65,46 +65,46 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="projects container pd-1">
+    <div id="projects" className={style.projectsContainer}>
       <div>
         <h2>{translations[currentLanguage].project_title}</h2>
         <div>
           <p>{translations[currentLanguage].project_description}</p>
         </div>
 
-        <div className="filterButton">
+        <div className={style.filterButton}>
           <button
-            className={activeTag === "All" ? "active" : ""}
+            className={activeTag === "All" ? style.active : ""}
             onClick={() => handleFilterChange("All")}
           >
             {translations[currentLanguage].button_all}
           </button>
           <button
-            className={activeTag === "JavaScript" ? "active" : ""}
+            className={activeTag === "JavaScript" ? style.active : ""}
             onClick={() => handleFilterChange("JavaScript")}
           >
             JavaScript
           </button>
           <button
-            className={activeTag === "React" ? "active" : ""}
+            className={activeTag === "React" ? style.active : ""}
             onClick={() => handleFilterChange("React")}
           >
             React
           </button>
           <button
-            className={activeTag === "HTML" ? "active" : ""}
+            className={activeTag === "HTML" ? style.active : ""}
             onClick={() => handleFilterChange("HTML")}
           >
             HTML
           </button>
           <button
-            className={activeTag === "CSS" ? "active" : ""}
+            className={activeTag === "CSS" ? style.active : ""}
             onClick={() => handleFilterChange("CSS")}
           >
             CSS
           </button>
           <button
-            className={activeTag === "SCSS" ? "active" : ""}
+            className={activeTag === "SCSS" ? style.active : ""}
             onClick={() => handleFilterChange("SCSS")}
           >
             SCSS
@@ -115,27 +115,27 @@ const Projects = () => {
       {listProjects.map(
         (projects) =>
           (filter === "All" || projects.tags.includes(filter)) && (
-            <div className="card" key={projects.id}>
+            <div className={style.card} key={projects.id}>
               <div>
-                <div className="card-title">
+                <div className={style.cardTitle}>
                   <h3>{projects.title} </h3>
                   <p>{projects.description}</p>
                 </div>
-                <div className="card-img">
+                <div className={style.cardImg}>
                   <img src={projects.img} alt={projects.title} />
                 </div>
               </div>
 
-              <div className="card-button">
-                <div className="card-button-tag">
+              <div className={style.cardButton}>
+                <div className={style.cardButtonTag}>
                   {projects.tags.map((tag) => (
-                    <div className="card-tag" key={tag}>
+                    <div className={style.cardTag} key={tag}>
                       <TagIcon />
                       {tag}
                     </div>
                   ))}
                 </div>
-                <div className="card-button-code">
+                <div className={style.cardButtonCode}>
                   <a href={projects.url} target="_blank" rel="noreferrer">
                     Deploy <PlayCircleOutlineIcon />
                   </a>
