@@ -1,3 +1,5 @@
+import { useSelector } from "react-redux";
+import translations from "../../assets/translations";
 import LayersIcon from "@mui/icons-material/Layers";
 import TerminalIcon from "@mui/icons-material/Terminal";
 import StorageIcon from "@mui/icons-material/Storage";
@@ -9,61 +11,84 @@ const skills = [
   {
     icon: <TerminalIcon />,
     category: "Front End",
-    items: [
-      { name: "HTML" },
-      { name: "CSS" },
-      { name: "JavaScript" },
-      { name: "React" },
-      { name: "Redux" },
-    ],
+    items: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+    className: "frontendSkill",
   },
   {
     icon: <StorageIcon />,
     category: "Back End",
-    items: [{ name: "Node.js" }, { name: "Express" }, { name: "MongoDB" }],
+    items: ["Node.js", "Express", "MongoDB"],
+    className: "backendSkill",
   },
   {
     icon: <LayersIcon />,
     category: "Design",
-    items: [
-      { name: "Adobe Photoshop" },
-      { name: "Canva" },
-      { name: "CorelDRAW" },
-    ],
+    items: ["Adobe Photoshop", "Canva", "CorelDRAW"],
+    className: "designSkill",
   },
   {
     icon: <BuildIcon />,
     category: "Testing and Additional Tools",
     items: [
-      { name: "Agile Methodologies" },
-      { name: "Exploratory Testing" },
-      { name: "Conventional Testing Methodologies" },
-      { name: "Jest" },
+      "Agile Methodologies",
+      "Exploratory Testing",
+      "Conventional Testing Methodologies",
+      "Jest",
     ],
+    className: "testingSkill",
   },
 ];
 
 const Skills = () => {
-  return (
-    <div id="skills" className={style.skills}>
-      {skills.map((skill) => (
-        <div className={style.skillContainer} key={skill.category}>
-          <div className={style.skillTitle}>
-            <div className={style.skillTitleSvg}>{skill.icon}</div>
-            <div>
-              <h3>{skill.category}</h3>
-            </div>
-          </div>
+  const currentLanguage = useSelector((state) => state.language);
 
-          <div className={style.skillCard}>
-            {skill.items.map((item) => (
-              <div key={item.name}>
-                <div className={style.skill}>{item.name}</div>
+  const skillsTop = skills.filter(
+    (item) => item.category === "Front End" || item.category === "Design"
+  );
+
+  const skillsButton = skills.filter(
+    (item) =>
+      item.category === "Back End" ||
+      item.category === "Testing and Additional Tools"
+  );
+
+  return (
+    <div id="skills" className={style.skillsContainer}>
+      <div className={style.skillsTitle}>
+        <p>{translations[currentLanguage].skill_text_I}</p>
+      </div>
+      <div className={style.skillGroup}>
+        <div className={style.skillGroupTop}>
+          {skillsTop.map((item, index) => (
+            <div key={index} className={style[item.className]} >
+              <div>{item.icon}</div>
+              <div>
+                <h3>{item.category}</h3>
               </div>
-            ))}
-          </div>
+              <div>
+                {item.items.map((item, index) => (
+                  <span key={index}>{item}</span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
+        <div className={style.skillGroupButton}>
+          {skillsButton.map((item, index) => (
+            <div key={index} className={style[item.className]}>
+              <div>{item.icon}</div>
+              <div>
+                <h3>{item.category}</h3>
+              </div>
+              <div>
+                {item.items.map((item, index) => (
+                  <span key={index}>{item}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
