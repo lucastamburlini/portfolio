@@ -65,9 +65,9 @@ const Skills = () => {
               <div>
                 <h3>{item.category}</h3>
               </div>
-              <div>
+              <div className={style.itemContainer}>
                 {item.items.map((item, index) => (
-                  <span key={index}>{item} </span>
+                  <div key={index}>{item}</div>
                 ))}
               </div>
             </div>
@@ -80,9 +80,9 @@ const Skills = () => {
               <div>
                 <h3>{item.category}</h3>
               </div>
-              <div>
+              <div className={style.itemContainer}>
                 {item.items.map((item, index) => (
-                  <span key={index}>{item}</span>
+                  <div key={index}>{item}</div>
                 ))}
               </div>
             </div>

@@ -40,6 +40,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  gap: 10px;
 }
 
 .backendSkill {
@@ -52,6 +53,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  gap: 10px;
 }
 
 .designSkill {
@@ -63,6 +65,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  gap: 10px;
 }
 
 .testingSkill {
@@ -74,17 +77,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  gap: 10px;
+}
+
+.itemContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5px;
+}
+
+.itemContainer div {
+  background-color: var(--bg-color);
+  padding: 2px 5px;
+  border-radius: 5px;
+  gap: 10px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
   .skillGroupTop {
     flex-direction: row;
   }
-  
+
   .skillGroupButton {
     flex-direction: row;
   }
-  
+
   .frontendSkill {
     padding: 16px;
     width: 60%;
@@ -105,18 +124,3 @@
     width: 60%;
   }
 }
-
-/* 
-.skillGroupTop {
-  display: flex;
-  width: 100%;
-  gap: 20px;
-}
-
-.skillGroupButton {
-  width: 100%;
-  display: flex;
-  gap: 20px;
-}
-
- */
