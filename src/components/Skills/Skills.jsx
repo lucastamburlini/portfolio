@@ -67,7 +67,7 @@ const Skills = () => {
               </div>
               <div>
                 {item.items.map((item, index) => (
-                  <span key={index}>{item}</span>
+                  <span key={index}>{item} </span>
                 ))}
               </div>
             </div>
