@@ -1,5 +1,4 @@
 .home {
-  padding: var(--pd-1);
   height: 100vh;
   display: flex;
   flex-direction: column;
