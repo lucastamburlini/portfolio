@@ -36,7 +36,7 @@
   border: 1px solid var(--details-color);
   border-radius: 5px;
   transition: all 0.2s ease-out;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .card:hover {

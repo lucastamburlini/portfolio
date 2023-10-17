@@ -1,0 +1,14 @@
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-color: var(--bg-color-off);
+  padding: 16px;
+  gap: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .projectsContainer {
+    padding: 32px;
+  }
+}
