@@ -23,6 +23,8 @@ const translations = {
     button_all: "All",
 
     // Projects Description
+    project_pokeApi: "PokeApi",
+    project_rickAndMorty: "Rick and Morty",
     project_taskManager: "Task Manager",
     description_taskManager: "My first web project, a basic to-do list using JavaScript, HTML, and CSS. My initial steps into web development.",
     project_portfolio: "Web Portfolio v1.0",
@@ -65,6 +67,8 @@ const translations = {
     button_all: "Todos",
 
     // Projects Description
+    project_pokeApi: "PokeApi",
+    project_rickAndMorty: "Rick y Morty",
     project_taskManager: "Task Manager",
     description_taskManager: "Mi primer proyecto web, una simple lista de tareas con JavaScript, HTML y CSS. Mis primeros pasos en el desarrollo web.",
     project_portfolio: "Portfolio Web v1.0",

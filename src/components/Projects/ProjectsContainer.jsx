@@ -31,22 +31,20 @@ const Projects = () => {
   const listProjects = [
     {
       id: 6,
-      title: translations[currentLanguage].project_enigma,
-      description: translations[currentLanguage].description_enigma,
+      title: translations[currentLanguage].project_pokeApi,
+      description: "",
       img: imgPokeApi,
-      url: "https://enigma-beryl.vercel.app/",
-      gh: "https://github.com/lucastamburlini/enigma",
-      tags: ["JavaScript", "HTML", "CSS"],
+      url: "https://pokeapp-three-beta.vercel.app/",
+      tags: ["React", "Redux", "CSS", "PostgreSQL", "Express"],
       logo: imgPokeApiLogo,
     },
     {
       id: 5,
-      title: translations[currentLanguage].project_enigma,
-      description: translations[currentLanguage].description_enigma,
+      title: translations[currentLanguage].project_rickAndMorty,
+      description: "",
       img: imgRickMorty,
-      url: "https://enigma-beryl.vercel.app/",
-      gh: "https://github.com/lucastamburlini/enigma",
-      tags: ["JavaScript", "HTML", "CSS"],
+      url: "https://rickandmorty-gold.vercel.app/",
+      tags: ["React", "Redux", "CSS", "PostgreSQL", "Express"],
       logo: imgRickMortyLogo,
     },
     {
@@ -55,7 +53,6 @@ const Projects = () => {
       description: translations[currentLanguage].description_enigma,
       img: imgEnigma,
       url: "https://enigma-beryl.vercel.app/",
-      gh: "https://github.com/lucastamburlini/enigma",
       tags: ["JavaScript", "HTML", "CSS"],
       logo: imgEnigmaLogo,
     },
@@ -65,7 +62,6 @@ const Projects = () => {
       description: translations[currentLanguage].description_rps,
       img: imgRps,
       url: "https://rps-game-delta.vercel.app/",
-      gh: "https://github.com/lucastamburlini/rps-game",
       tags: ["JavaScript", "HTML", "CSS"],
       logo: imgRpsLogo,
     },
@@ -75,7 +71,6 @@ const Projects = () => {
       description: translations[currentLanguage].description_portfolio,
       img: imgPortfolio,
       url: "https://lucastamburliniold.vercel.app/",
-      gh: "https://github.com/lucastamburlini/portfolio-viejo.git",
       tags: ["React", "HTML", "SCSS"],
       logo: imgPortfolioLogo,
     },
@@ -85,7 +80,6 @@ const Projects = () => {
       description: translations[currentLanguage].description_taskManager,
       img: imgTaskManager,
       url: "https://task-manager-one-ochre.vercel.app/",
-      gh: "https://github.com/lucastamburlini/TaskManager",
       tags: ["JavaScript", "HTML", "CSS"],
       logo: imgTaskManagerLogo,
     },
@@ -140,6 +134,24 @@ const Projects = () => {
             onClick={() => handleFilterChange("SCSS")}
           >
             SCSS
+          </button>
+          <button
+            className={activeTag === "Redux" ? style.active : ""}
+            onClick={() => handleFilterChange("Redux")}
+          >
+            Redux
+          </button>
+          <button
+            className={activeTag === "PostgreSQL" ? style.active : ""}
+            onClick={() => handleFilterChange("PostgreSQL")}
+          >
+            PostgreSQL
+          </button>
+          <button
+            className={activeTag === "Express" ? style.active : ""}
+            onClick={() => handleFilterChange("Express")}
+          >
+            Express
           </button>
         </div>
       </div>

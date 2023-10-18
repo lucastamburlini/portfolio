@@ -1,50 +1,70 @@
 .card {
-    width: 240px;
-    height: 200px;
-    border-radius: 5px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-    font-size: 14px;
-    color: var(--text-primary-color);
-    position: relative;
-    transition: all 0.2s ease;
-    cursor: pointer;
-  }
-  
-  .card:hover {
-    border: 1px solid var(--border-off);
-  }
-  
-  .cardTop {
-    position: relative;
-    width: 100%;
-    height: 70%;
+  width: 240px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-primary-color);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border: 1px solid var(--border-off);
+}
+
+.cardDeploy {
+  display: none;
+  cursor: pointer;
+}
+
+.cardDeploy a svg {
+  width: 50px;
+  height: 50px;
+  color: var(--text-primary-color);
+}
+
+.card:hover .cardDeploy {
+  display: flex;
+  position: absolute;
+  z-index: 99;
+  top: 37.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardTop {
+  position: relative;
+  width: 100%;
+  height: 70%;
 }
 
 .cardTop img {
-    height: 100%;
-    transition: filter 0.2s ease;
-    object-fit: cover;
-  }
-  
-  .card:hover .cardTop img,
-  .cardButton:hover ~ .cardTop img {
-    filter: brightness(0.3);
-  }
-  
-  .cardButton {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 12px;
-  }
-  
-  .cardButton img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  width: 100%;
+  height: 100%;
+  transition: filter 0.2s ease;
+  object-fit: cover;
+}
+
+.card:hover .cardTop img,
+.cardButton:hover ~ .cardTop img {
+  filter: brightness(0.3);
+}
+
+.cardButton {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 30%;
+  padding: 12px;
+}
+
+.cardButton img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
