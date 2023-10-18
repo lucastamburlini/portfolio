@@ -1,7 +1,6 @@
 .card {
   width: 240px;
   height: 200px;
-  border-radius: 5px;
   overflow: hidden;
   border: 1px solid var(--border);
   font-size: 12px;

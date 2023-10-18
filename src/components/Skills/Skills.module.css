@@ -39,7 +39,6 @@
   background-color: var(--bg-color-off);
   width: 100%;
   padding: 32px;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +50,6 @@
   background-color: var(--bg-color-off);
   width: 100%;
   padding: 32px;
-  border-radius: 10px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -64,7 +62,6 @@
   background-color: var(--bg-color-off);
   width: 100%;
   padding: 32px;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,7 +73,6 @@
   background-color: var(--bg-color-off);
   width: 100%;
   padding: 32px;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,7 +90,6 @@
 .itemContainer div {
   background-color: var(--bg-color);
   padding: 4px 7px;
-  border-radius: 5px;
   gap: 10px;
   font-size: 12px;
 }
