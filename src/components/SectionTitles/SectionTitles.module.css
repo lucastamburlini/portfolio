@@ -1,6 +1,7 @@
 .sectionTitlesContainer {
     width: 100%;
     text-align: center;
+    padding: var(--pd-0);
 }
 
 .sectionTitlesContainer span {

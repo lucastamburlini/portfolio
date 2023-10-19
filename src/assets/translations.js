@@ -49,6 +49,7 @@ const translations = {
     introduction_II: "¡Hagamos realidad tu visión digital!",
 
     // About
+    spanAbout: "MI VIDA EN POCAS PALABRAS",
     about_title: "Hola, soy Lucas Tamburlini",
     about_text_I: "Apasionado por la tecnología y la programación, nací el 3 de junio de 1991 en Concepción del Uruguay, Entre Ríos, Argentina, y me recibí en la Universidad de Belgrano como Analista Universitario en Gestión de Capital Humano en 2022.",
     about_text_II: "Luego de terminar la carrera, descubrí mi verdadera vocación como desarrollador y me gradué como Full Stack Web Developer en Henry, donde adquirí las habilidades necesarias para trabajar en el mundo de la tecnología. Por otro lado, también me especialicé en búsqueda y selección de talento en la Universidad Tecnológica Nacional y como IT Recruiter en Staffy.",
