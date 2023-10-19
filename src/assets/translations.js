@@ -5,6 +5,7 @@ const translations = {
     introduction_II: "Let's bring your digital vision to life!",
 
     // About
+    spanAbout: "MY LIFE IN A NUTSHELL",
     about_title: "Hello, I'm Lucas Tamburlini",
     about_text_I: "Passionate about technology and programming, I was born on June 3, 1991 in Concepción del Uruguay, Entre Ríos, Argentina, and I graduated from Universidad de Belgrano as University Analyst in Human Capital Management in 2022.",
     about_text_II: "After finishing my degree, I discovered my true vocation as a developer and graduated as a Full Stack Web Developer at Henry, where I acquired the necessary skills to work in the world of technology. On the other hand, I also specialized in search and selection of talent at the Universidad Tecnologica Nacional and as an IT Recruiter at Staffy.",

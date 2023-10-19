@@ -39,7 +39,14 @@
   border: 2px solid var(--border);
   margin: 8px;
   transition: all 0.2s ease-out;
-  border-radius: var(--radius);
+  border-radius: 50%;
+}
+
+.footer ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .footer li:hover {

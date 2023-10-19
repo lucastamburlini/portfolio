@@ -48,12 +48,10 @@
   color: var(--primary-color);
 }
 
-
 @media screen and (min-width: 768px) {
   .about {
     display: flex;
     flex-direction: row;
-    gap: 30px;
   }
 
   .aboutImg {
@@ -69,7 +67,8 @@
     width: 50%;
   }
 
-  .aboutInfo main {
+  .aboutInfoContent {
+    margin: auto;
     width: 80%;
   }
 }

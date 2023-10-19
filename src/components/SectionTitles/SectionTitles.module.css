@@ -1,0 +1,10 @@
+.sectionTitlesContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.sectionTitlesContainer span {
+    font-weight: 900;
+    font-size: 0.75rem;
+    letter-spacing: 0.175rem;
+}
