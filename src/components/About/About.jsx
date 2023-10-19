@@ -17,45 +17,41 @@ const About = () => {
         <img src={imgAbout} alt={imgAbout} />
       </section>
       <section className={style.aboutInfo}>
-        <header>
-          <h2>{currentTranslations.about_title}</h2>
-        </header>
-        <main>
-          <p>{currentTranslations.about_text_I}</p>
-          <br />
-          <p>{currentTranslations.about_text_II}</p>
-          <div className={style.contact}>
-            <ul>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/lucasgabrieltamburlini/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <LinkedInIcon />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/l.tamburlini/?hl=es"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <InstagramIcon />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/lucastamburlini"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GitHubIcon />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </main>
+        <h2>{currentTranslations.about_title}</h2>
+        <p>{currentTranslations.about_text_I}</p>
+        <br />
+        <p>{currentTranslations.about_text_II}</p>
+        <div className={style.contact}>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lucasgabrieltamburlini/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedInIcon />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/l.tamburlini/?hl=es"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InstagramIcon />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/lucastamburlini"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon />
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   );

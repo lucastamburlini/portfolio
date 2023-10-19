@@ -16,13 +16,11 @@
 
 .aboutImg img {
   width: 100%;
-  max-width: 300px;
 }
 
 .aboutInfo {
   display: flex;
   justify-content: center;
-  align-items: start;
   flex-direction: column;
 }
 
@@ -62,7 +60,16 @@
     width: 50%;
     justify-content: center;
   }
+
+  .aboutImg img {
+    width: 80%;
+  }
+
   .aboutInfo {
     width: 50%;
+  }
+
+  .aboutInfo main {
+    width: 80%;
   }
 }
