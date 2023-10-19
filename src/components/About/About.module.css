@@ -2,11 +2,48 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
-  padding: var(--pd-1);
+}
+
+.aboutImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImg img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.aboutInfo {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
 }
 
 .about h2 {
   padding: var(--pd-1);
+}
+
+.about p {
+  padding: var(--pd-0);
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutImg {
+    padding: 16px;
+    width: 50%;
+  }
+  .aboutInfo {
+    width: 50%;
+    padding: 16px;
+  }
 }

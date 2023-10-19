@@ -59,6 +59,7 @@ a {
 }
 
 .container {
+  height: 100%;
   width: 80%;
   margin: auto;
 }
