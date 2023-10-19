@@ -5,19 +5,20 @@
   justify-content: center;
   align-items: center;
 }
+
+.home p {
+  padding: var(--pd-1);
+  line-height: 1.4;
+  text-align: center;
+}
+
 .title {
   text-align: center;
   flex-direction: column;
 }
 
-.title p {
-  padding: var(--pd-1);
-  line-height: 1.4;
-}
-
 .title h1 {
   font-size: var(--fs-h1);
-  line-height: 1.8;
   color: var(--text-primary-color);
 }
 

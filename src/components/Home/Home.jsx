@@ -9,50 +9,51 @@ import style from "./Home.module.css";
 
 const Home = () => {
   const currentLanguage = useSelector((state) => state.language);
+  const currentTranslations = translations[currentLanguage];
 
   return (
     <div className={style.home}>
-      <div className={style.title}>
-        <h1>
-          {translations[currentLanguage].title} <span>Lucas Tamburlini</span>
-        </h1>
+      <header className={style.title}>
+        <h1>Full Stack Developer</h1>
+      </header>
+      <main>
         <p>
-          {translations[currentLanguage].introduction_I}
+          {currentTranslations.introduction_I}
           <br />
-          {translations[currentLanguage].introduction_II}
+          {currentTranslations.introduction_II}
         </p>
-      </div>
-      <div className={style.contact}>
-        <ul>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/lucasgabrieltamburlini/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkedInIcon />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/l.tamburlini/?hl=es"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <InstagramIcon />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/lucastamburlini"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <GitHubIcon />
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div className={style.contact}>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lucasgabrieltamburlini/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedInIcon />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/l.tamburlini/?hl=es"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InstagramIcon />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/lucastamburlini"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
     </div>
   );
 };
