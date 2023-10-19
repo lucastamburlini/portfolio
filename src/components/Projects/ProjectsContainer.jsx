@@ -27,11 +27,12 @@ const Projects = () => {
   const currentLanguage = useSelector((state) => state.language);
   const [filter, setFilter] = useState("All");
   const [activeTag, setActiveTag] = useState("All");
+  const currentTranslations = translations[currentLanguage];
 
   const listProjects = [
     {
       id: 6,
-      title: translations[currentLanguage].project_pokeApi,
+      title: currentTranslations.project_pokeApi,
       description: "",
       img: imgPokeApi,
       url: "https://pokeapp-three-beta.vercel.app/",
@@ -40,7 +41,7 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: translations[currentLanguage].project_rickAndMorty,
+      title: currentTranslations.project_rickAndMorty,
       description: "",
       img: imgRickMorty,
       url: "https://rickandmorty-gold.vercel.app/",
@@ -49,8 +50,8 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: translations[currentLanguage].project_enigma,
-      description: translations[currentLanguage].description_enigma,
+      title: currentTranslations.project_enigma,
+      description: currentTranslations.description_enigma,
       img: imgEnigma,
       url: "https://enigma-beryl.vercel.app/",
       tags: ["JavaScript", "HTML", "CSS"],
@@ -58,8 +59,8 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: translations[currentLanguage].project_rps,
-      description: translations[currentLanguage].description_rps,
+      title: currentTranslations.project_rps,
+      description: currentTranslations.description_rps,
       img: imgRps,
       url: "https://rps-game-delta.vercel.app/",
       tags: ["JavaScript", "HTML", "CSS"],
@@ -67,8 +68,8 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: translations[currentLanguage].project_portfolio,
-      description: translations[currentLanguage].description_portfolio,
+      title: currentTranslations.project_portfolio,
+      description: currentTranslations.description_portfolio,
       img: imgPortfolio,
       url: "https://lucastamburliniold.vercel.app/",
       tags: ["React", "HTML", "SCSS"],
@@ -76,8 +77,8 @@ const Projects = () => {
     },
     {
       id: 1,
-      title: translations[currentLanguage].project_taskManager,
-      description: translations[currentLanguage].description_taskManager,
+      title: currentTranslations.project_taskManager,
+      description: currentTranslations.description_taskManager,
       img: imgTaskManager,
       url: "https://task-manager-one-ochre.vercel.app/",
       tags: ["JavaScript", "HTML", "CSS"],
@@ -92,18 +93,16 @@ const Projects = () => {
 
   return (
     <div id="projects" className={style.projectsContainer}>
-      <div>
-        <h2>{translations[currentLanguage].project_title}</h2>
+      <section className={style.projects}>
         <div>
-          <p>{translations[currentLanguage].project_description}</p>
+          <h2>{currentTranslations.project_title}</h2>
         </div>
-
         <div className={style.filterButton}>
           <button
             className={activeTag === "All" ? style.active : ""}
             onClick={() => handleFilterChange("All")}
           >
-            {translations[currentLanguage].button_all}
+            {currentTranslations.button_all}
           </button>
           <button
             className={activeTag === "JavaScript" ? style.active : ""}
@@ -154,18 +153,19 @@ const Projects = () => {
             Express
           </button>
         </div>
-      </div>
-
-      {listProjects.map(
-        (project) =>
-          (filter === "All" || project.tags.includes(filter)) && (
-            <CardProject
-              key={project.id}
-              project={project}
-              currentLanguage={currentLanguage}
-            />
-          )
-      )}
+        <div className={style.listProjects}>
+          {listProjects.map(
+            (project) =>
+              (filter === "All" || project.tags.includes(filter)) && (
+                <CardProject
+                  key={project.id}
+                  project={project}
+                  currentLanguage={currentLanguage}
+                />
+              )
+          )}
+        </div>
+      </section>
     </div>
   );
 };
