@@ -9,7 +9,9 @@
 .home p {
   padding: var(--pd-1);
   line-height: 1.4;
+  font-weight: 300;
   text-align: center;
+  font-size: 24px;
 }
 
 .title {
@@ -25,23 +27,4 @@
 .title h1 span {
   border-bottom: 10px solid var(--bg-color-off);
   margin-bottom: -20px;
-}
-
-.contact ul {
-  display: flex;
-  justify-content: center;
-}
-
-.contact li {
-  padding: 5px 12px;
-}
-
-.contact svg {
-  color: var(--text-secondary-color);
-  height: 22px;
-  transition: all 0.2s ease-out;
-}
-
-.contact svg:hover {
-  color: var(--primary-color);
 }

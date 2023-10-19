@@ -4,6 +4,8 @@
   justify-content: center;
   min-height: 100vh;
   width: 100%;
+  max-width: 1024px;
+  margin: auto;
 }
 
 .aboutImg {
@@ -28,22 +30,39 @@
   padding: var(--pd-1);
 }
 
-.about p {
-  padding: var(--pd-0);
+.contact ul {
+  padding: var(--pd-1);
 }
+
+.contact ul {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.contact svg {
+  color: var(--text-secondary-color);
+  height: 22px;
+  transition: all 0.2s ease-out;
+}
+
+.contact svg:hover {
+  color: var(--primary-color);
+}
+
 
 @media screen and (min-width: 768px) {
   .about {
     display: flex;
     flex-direction: row;
+    gap: 30px;
   }
 
   .aboutImg {
-    padding: 16px;
     width: 50%;
+    justify-content: center;
   }
   .aboutInfo {
     width: 50%;
-    padding: 16px;
   }
 }

@@ -1,7 +1,7 @@
 const translations = {
   English: {
     // Home
-    introduction_I: "As a developer, I create user-centric web experiences with meticulous attention to detail.",
+    introduction_I: "I create user-centric web experiences with meticulous attention to detail.",
     introduction_II: "Let's bring your digital vision to life!",
 
     // About
@@ -44,7 +44,7 @@ const translations = {
 
   Español: {
     // Home
-    introduction_I: "Como desarrollador, creo experiencias web centradas en el usuario con una meticulosa atención al detalle.",
+    introduction_I: "Creo experiencias web centradas en el usuario con una meticulosa atención al detalle.",
     introduction_II: "¡Hagamos realidad tu visión digital!",
 
     // About
