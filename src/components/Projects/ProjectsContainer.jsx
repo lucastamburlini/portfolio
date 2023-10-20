@@ -22,6 +22,7 @@ import imgPortfolioLogo from "../../assets/imgLogos/portfolioOld.png";
 
 import imgTaskManager from "../../assets/imgProjects/taskManager.jpg";
 import imgTaskManagerLogo from "../../assets/imgLogos/taskManager.png";
+import SectionTitles from "../SectionTitles/SectionTitles";
 
 const Projects = () => {
   const currentLanguage = useSelector((state) => state.language);
@@ -92,81 +93,84 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className={style.projectsContainer}>
-      <section className={style.projects}>
-        <div>
-          <h2>{currentTranslations.project_title}</h2>
-        </div>
-        <div className={style.filterButton}>
-          <button
-            className={activeTag === "All" ? style.active : ""}
-            onClick={() => handleFilterChange("All")}
-          >
-            {currentTranslations.button_all}
-          </button>
-          <button
-            className={activeTag === "JavaScript" ? style.active : ""}
-            onClick={() => handleFilterChange("JavaScript")}
-          >
-            JavaScript
-          </button>
-          <button
-            className={activeTag === "React" ? style.active : ""}
-            onClick={() => handleFilterChange("React")}
-          >
-            React
-          </button>
-          <button
-            className={activeTag === "HTML" ? style.active : ""}
-            onClick={() => handleFilterChange("HTML")}
-          >
-            HTML
-          </button>
-          <button
-            className={activeTag === "CSS" ? style.active : ""}
-            onClick={() => handleFilterChange("CSS")}
-          >
-            CSS
-          </button>
-          <button
-            className={activeTag === "SCSS" ? style.active : ""}
-            onClick={() => handleFilterChange("SCSS")}
-          >
-            SCSS
-          </button>
-          <button
-            className={activeTag === "Redux" ? style.active : ""}
-            onClick={() => handleFilterChange("Redux")}
-          >
-            Redux
-          </button>
-          <button
-            className={activeTag === "PostgreSQL" ? style.active : ""}
-            onClick={() => handleFilterChange("PostgreSQL")}
-          >
-            PostgreSQL
-          </button>
-          <button
-            className={activeTag === "Express" ? style.active : ""}
-            onClick={() => handleFilterChange("Express")}
-          >
-            Express
-          </button>
-        </div>
-        <div className={style.listProjects}>
-          {listProjects.map(
-            (project) =>
-              (filter === "All" || project.tags.includes(filter)) && (
-                <CardProject
-                  key={project.id}
-                  project={project}
-                  currentLanguage={currentLanguage}
-                />
-              )
-          )}
-        </div>
-      </section>
-    </div>
+    <>
+      <SectionTitles id={"projects"} text={currentTranslations.spanProjects} />
+      <div className={style.projectsContainer}>
+        <section className={style.projects}>
+          <div>
+            <h2>{currentTranslations.project_title}</h2>
+          </div>
+          <div className={style.filterButton}>
+            <button
+              className={activeTag === "All" ? style.active : ""}
+              onClick={() => handleFilterChange("All")}
+            >
+              {currentTranslations.button_all}
+            </button>
+            <button
+              className={activeTag === "JavaScript" ? style.active : ""}
+              onClick={() => handleFilterChange("JavaScript")}
+            >
+              JavaScript
+            </button>
+            <button
+              className={activeTag === "React" ? style.active : ""}
+              onClick={() => handleFilterChange("React")}
+            >
+              React
+            </button>
+            <button
+              className={activeTag === "HTML" ? style.active : ""}
+              onClick={() => handleFilterChange("HTML")}
+            >
+              HTML
+            </button>
+            <button
+              className={activeTag === "CSS" ? style.active : ""}
+              onClick={() => handleFilterChange("CSS")}
+            >
+              CSS
+            </button>
+            <button
+              className={activeTag === "SCSS" ? style.active : ""}
+              onClick={() => handleFilterChange("SCSS")}
+            >
+              SCSS
+            </button>
+            <button
+              className={activeTag === "Redux" ? style.active : ""}
+              onClick={() => handleFilterChange("Redux")}
+            >
+              Redux
+            </button>
+            <button
+              className={activeTag === "PostgreSQL" ? style.active : ""}
+              onClick={() => handleFilterChange("PostgreSQL")}
+            >
+              PostgreSQL
+            </button>
+            <button
+              className={activeTag === "Express" ? style.active : ""}
+              onClick={() => handleFilterChange("Express")}
+            >
+              Express
+            </button>
+          </div>
+          <div className={style.listProjects}>
+            {listProjects.map(
+              (project) =>
+                (filter === "All" || project.tags.includes(filter)) && (
+                  <CardProject
+                    key={project.id}
+                    project={project}
+                    currentLanguage={currentLanguage}
+                  />
+                )
+            )}
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 

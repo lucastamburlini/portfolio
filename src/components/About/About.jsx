@@ -14,8 +14,8 @@ const About = () => {
 
   return (
     <>
-      <SectionTitles text={currentTranslations.spanAbout} />
-      <div id="about" className={style.about}>
+      <SectionTitles id={"about"} text={currentTranslations.spanAbout} />
+      <div  className={style.about}>
         <section className={style.aboutImg}>
           <img src={imgAbout} alt={imgAbout} />
         </section>

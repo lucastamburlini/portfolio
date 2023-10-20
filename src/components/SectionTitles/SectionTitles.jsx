@@ -1,8 +1,8 @@
 import style from "./SectionTitles.module.css";
 
-const SectionTitles = ({ text }) => {
+const SectionTitles = ({ text, id }) => {
   return (
-    <div className={style.sectionTitlesContainer}>
+    <div id={id} className={style.sectionTitlesContainer}>
       <span>{text}</span>
     </div>
   );

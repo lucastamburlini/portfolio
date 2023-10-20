@@ -18,7 +18,8 @@ const translations = {
     experiences_text_I: "My journey in the world of programming is just beginning, and although I don't have formal work experience yet, I'm learning and progressing every day, step by step. If you're in search of a full-stack web developer, I'm eager to listen. Your guidance and support will be invaluable as I embark on this path.",
 
     // Projects
-    project_title: "Projects",
+    spanProjects: "MY FEATURED PROJECTS",
+    project_title: "Deployment",
     project_description: "I invite you to explore my online portfolio and dive into my web projects. Discover how I apply these technologies to create online experiences. Use the tag filter to select a technology and see the projects that match your interests and technology skills.",
     button_all: "All",
 
@@ -62,7 +63,8 @@ const translations = {
     experiences_text_I: "Mi recorrido en el mundo de la programación está comenzando, y aunque aún no cuento con experiencia laboral formal, cada día aprendo y avanzo paso a paso. Si estás en búsqueda de un desarrollador web full stack, estoy dispuesto a escuchar. Tu orientación y apoyo serán invaluables para comenzar en este camino.",
 
     // Projects
-    project_title: "Proyectos",
+    spanProjects: "MIS PROYECTOS DESTACADOS",
+    project_title: "Implementación",
     project_description: "Te invito a explorar mi portafolio en línea y sumergirte en mis proyectos web. Descubre cómo aplico estas tecnologías para crear experiencias en línea. Utiliza el filtro de etiquetas para seleccionar una tecnología y ver los proyectos que se ajustan a tus intereses y habilidades tecnológicas.",
     button_all: "Todos",
 
