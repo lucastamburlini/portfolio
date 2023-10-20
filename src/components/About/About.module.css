@@ -45,7 +45,7 @@
 }
 
 .contact svg:hover {
-  color: var(--primary-color);
+  color: var(--hover-secondary);
 }
 
 @media screen and (min-width: 768px) {
