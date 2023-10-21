@@ -3,7 +3,7 @@ import Experiences from "../components/Experiences/Experiences";
 import Footer from "../components/Footer/Footer";
 import Home from "../components/Home/Home";
 import ProjectsContainer from "../components/Projects/ProjectsContainer";
-import Skills from "../components/Skills/Skills";
+import Stack from "../components/Stack/Stack";
 
 import styleApp from "../App.module.css";
 
@@ -12,7 +12,7 @@ const Layout = () => {
     <div className={styleApp.container}>
       <Home />
       <About />
-      <Skills />
+      <Stack />
       <Experiences />
       <ProjectsContainer />
       <Footer />
