@@ -1,7 +1,7 @@
-import { IconBrandReact } from "@tabler/icons-react";
 import { IconBrandHtml5 } from '@tabler/icons-react';
 import { IconBrandCss3 } from '@tabler/icons-react';
 import { IconBrandJavascript } from '@tabler/icons-react';
+import { IconBrandReact } from '@tabler/icons-react';
 import { IconBrandRedux } from '@tabler/icons-react';
 import { IconBrandNodejs } from '@tabler/icons-react';
 import { IconBrandMongodb } from '@tabler/icons-react';
@@ -9,7 +9,11 @@ import { IconBrandAdobe } from '@tabler/icons-react';
 import { Icon360 } from '@tabler/icons-react';
 import { IconBugFilled } from '@tabler/icons-react';
 import { IconEyeSearch } from '@tabler/icons-react';
-import { IconWorld } from '@tabler/icons-react';
+import { SiSequelize } from 'react-icons/si';
+import { SiCanva } from 'react-icons/si';
+import { SiPostgresql } from 'react-icons/si';
+import { GiAirBalloon } from 'react-icons/gi';
+
 
 export const skills = [
   {
@@ -53,17 +57,27 @@ export const skills = [
     name: "MongoDB",
   },
   {
+    icon: <SiPostgresql />,
+    category: "Back End",
+    name: "PostgreSQL",
+  },
+  {
+    icon: <SiSequelize />,
+    category: "Back End",
+    name: "Sequelize",
+  },
+  {
     icon: <IconBrandAdobe />,
     category: "Design",
     name: "Adobe",
   },
   {
-    icon: <IconBrandReact />,
+    icon: <SiCanva />,
     category: "Design",
     name: "Canva",
   },
   {
-    icon: <IconWorld />,
+    icon: <GiAirBalloon />,
     category: "Design",
     name: "CorelDRAW",
   },

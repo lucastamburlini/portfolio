@@ -37,11 +37,11 @@
   font-size: 12px;
 }
 
-.boxStackImg img {
-  height: 22px;
-  width: 22px;
-  background: white;
-  background-color: var(--bg-color);
+.boxStackImg svg {
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
 }
 
 .boxStackText {
@@ -60,4 +60,3 @@
 .boxStackText p {
   font-size: 13px;
 }
-
