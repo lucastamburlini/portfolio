@@ -5,12 +5,13 @@
   align-items: center;
   height: auto;
   width: 100%;
-  padding: var(--pd-1);
+  padding: var(--pd-2);
   margin: auto;
   gap: 30px;
 }
 
 .projects {
+  border-radius: var(--radius);
   background-color: var(--bg-color-off);
   display: flex;
   flex-direction: column;

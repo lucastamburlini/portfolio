@@ -1,18 +1,29 @@
 import { IconBrandReact } from "@tabler/icons-react";
+import { IconBrandHtml5 } from '@tabler/icons-react';
+import { IconBrandCss3 } from '@tabler/icons-react';
+import { IconBrandJavascript } from '@tabler/icons-react';
+import { IconBrandRedux } from '@tabler/icons-react';
+import { IconBrandNodejs } from '@tabler/icons-react';
+import { IconBrandMongodb } from '@tabler/icons-react';
+import { IconBrandAdobe } from '@tabler/icons-react';
+import { Icon360 } from '@tabler/icons-react';
+import { IconBugFilled } from '@tabler/icons-react';
+import { IconEyeSearch } from '@tabler/icons-react';
+import { IconWorld } from '@tabler/icons-react';
 
 export const skills = [
   {
-    icon: <IconBrandReact />,
+    icon: <IconBrandHtml5 />,
+    category: "Front End",
+    name: "HTML",
+  },
+  {
+    icon: <IconBrandCss3 />,
     category: "Front End",
     name: "CSS",
   },
   {
-    icon: <IconBrandReact />,
-    category: "Front End",
-    name: "React",
-  },
-  {
-    icon: <IconBrandReact />,
+    icon: <IconBrandJavascript />,
     category: "Front End",
     name: "JavaScript",
   },
@@ -22,29 +33,29 @@ export const skills = [
     name: "React",
   },
   {
-    icon: <IconBrandReact />,
+    icon: <IconBrandRedux />,
     category: "Front End",
     name: "Redux",
   },
   {
-    icon: <IconBrandReact />,
+    icon: <IconBrandNodejs />,
     category: "Back End",
     name: "Node.js",
   },
   {
-    icon: <IconBrandReact />,
+    icon: "EX",
     category: "Back End",
     name: "Express",
   },
   {
-    icon: <IconBrandReact />,
+    icon: <IconBrandMongodb />,
     category: "Back End",
     name: "MongoDB",
   },
   {
-    icon: <IconBrandReact />,
+    icon: <IconBrandAdobe />,
     category: "Design",
-    name: "Adobe Photoshop",
+    name: "Adobe",
   },
   {
     icon: <IconBrandReact />,
@@ -52,29 +63,28 @@ export const skills = [
     name: "Canva",
   },
   {
-    icon: <IconBrandReact />,
+    icon: <IconWorld />,
     category: "Design",
     name: "CorelDRAW",
   },
   {
-    icon: <IconBrandReact />,
+    icon: <Icon360 />,
     category: "Additional Tools",
     name: "Agile Methodologies",
   },
   {
-    icon: <IconBrandReact />,
+    icon: <IconEyeSearch />,
     category: "Testing",
     name: "Exploratory Testing",
   },
   {
-    icon: <IconBrandReact />,
+    icon: <IconBugFilled />,
     category: "Testing",
     name: "Conventional Testing",
   },
   {
-    icon: <IconBrandReact />,
+    icon: "Jest",
     category: "Testing",
     name: "Jest",
   },
-
 ];

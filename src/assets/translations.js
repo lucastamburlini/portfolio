@@ -10,7 +10,8 @@ const translations = {
     about_text_I: "Passionate about technology and programming, I was born on June 3, 1991 in Concepción del Uruguay, Entre Ríos, Argentina, and I graduated from Universidad de Belgrano as University Analyst in Human Capital Management in 2022.",
     about_text_II: "After finishing my degree, I discovered my true vocation as a developer and graduated as a Full Stack Web Developer at Henry, where I acquired the necessary skills to work in the world of technology. On the other hand, I also specialized in search and selection of talent at the Universidad Tecnologica Nacional and as an IT Recruiter at Staffy.",
 
-    // Skill
+    // Stack
+    spanStack: "EXPLORE MY TECHNOLOGY AND DESIGN SKILLS",
     skill_text_I: "In the following section, you will find the technologies I use to develop.",
 
     // Experiences
@@ -56,6 +57,7 @@ const translations = {
     about_text_II: "Luego de terminar la carrera, descubrí mi verdadera vocación como desarrollador y me gradué como Full Stack Web Developer en Henry, donde adquirí las habilidades necesarias para trabajar en el mundo de la tecnología. Por otro lado, también me especialicé en búsqueda y selección de talento en la Universidad Tecnológica Nacional y como IT Recruiter en Staffy.",
 
     // Skill
+    spanStack: "EXPLORA MIS HABILIDADES TECNOLÓGICAS Y DE DISEÑO",
     skill_text_I: "En la siguiente sección, encontrarás las tecnologías que utilizo para desarrollar.",
 
     // Experiences

@@ -1,18 +1,18 @@
+import { useSelector } from "react-redux";
+import translations from "../../assets/translations";
 import SectionTitles from "../SectionTitles/SectionTitles";
 import { skills } from "./skills";
 
 import style from "./Stack.module.css";
 
 const Stack = () => {
+  const currentLanguage = useSelector((state) => state.language);
+  const currentTranslations = translations[currentLanguage];
+
   return (
     <>
-      <SectionTitles id={"stack"} text={"PRUEBA"} />
+      <SectionTitles id={"stack"} text={currentTranslations.spanStack} />
       <div className={style.stackContainer}>
-        <section>
-          <article>
-            <p>stack</p>
-          </article>
-        </section>
         <section className={style.boxStackContainer}>
           {skills.map((item, index) => (
             <div key={index} className={style.boxStack}>

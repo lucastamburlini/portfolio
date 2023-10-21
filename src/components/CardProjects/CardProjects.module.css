@@ -58,6 +58,7 @@
   align-items: center;
   height: 30%;
   padding: 12px;
+  background-color: var(--bg-color);
 }
 
 .cardButton img {
