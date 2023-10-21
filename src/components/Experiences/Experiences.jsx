@@ -9,7 +9,7 @@ const Experiences = () => {
   return (
     <div id="experiences" className={style.experiencesContainer}>
       <h2>{translations[currentLanguage].experiences_title}</h2>
-      <div>
+      <div className={style.experiencesText}>
         <p>{translations[currentLanguage].experiences_text_I}</p>
       </div>
     </div>

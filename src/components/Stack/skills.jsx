@@ -5,13 +5,14 @@ import { IconBrandReact } from '@tabler/icons-react';
 import { IconBrandRedux } from '@tabler/icons-react';
 import { IconBrandNodejs } from '@tabler/icons-react';
 import { IconBrandMongodb } from '@tabler/icons-react';
-import { IconBrandAdobe } from '@tabler/icons-react';
 import { Icon360 } from '@tabler/icons-react';
 import { IconBugFilled } from '@tabler/icons-react';
 import { IconEyeSearch } from '@tabler/icons-react';
 import { SiSequelize } from 'react-icons/si';
 import { SiCanva } from 'react-icons/si';
 import { SiPostgresql } from 'react-icons/si';
+import { SiAdobephotoshop } from 'react-icons/si';
+import { SiAdobeillustrator } from 'react-icons/si';
 import { GiAirBalloon } from 'react-icons/gi';
 
 
@@ -67,9 +68,14 @@ export const skills = [
     name: "Sequelize",
   },
   {
-    icon: <IconBrandAdobe />,
+    icon: <SiAdobephotoshop />,
     category: "Design",
-    name: "Adobe",
+    name: "Adobe Photoshop",
+  },
+  {
+    icon: <SiAdobeillustrator />,
+    category: "Design",
+    name: "Adobe Illustrator",
   },
   {
     icon: <SiCanva />,

@@ -1,9 +1,17 @@
 .experiencesContainer {
-    height: 100%;
-    width: 100%;
-    padding: var(--pd-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: var(--pd-2);
 }
 
 .experiencesContainer h2 {
-    padding: var(--pd-1);
+  padding: var(--pd-1);
+}
+
+.experiencesContainer .experiencesText {
+  max-width: 70%;
+  margin: auto;
 }
