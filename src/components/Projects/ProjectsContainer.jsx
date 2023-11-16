@@ -31,13 +31,22 @@ const Projects = () => {
   const currentTranslations = translations[currentLanguage];
 
   const listProjects = [
+    /*   {
+      id: 7,
+      title: currentTranslations.project_pokeApi,
+      description: "",
+      img: imgPokeApi,
+      url: "https://pokeapp-three-beta.vercel.app/",
+      tags: ["React", "CSS Module", "PostgreSQL", "Express", "Sequelize", "Node JS"],
+      logo: imgPokeApiLogo,
+    }, */
     {
       id: 6,
       title: currentTranslations.project_pokeApi,
       description: "",
       img: imgPokeApi,
       url: "https://pokeapp-three-beta.vercel.app/",
-      tags: ["React", "Redux", "CSS", "PostgreSQL", "Express"],
+      tags: ["React", "Redux", "CSS", "PostgreSQL", "Express", "Node JS"],
       logo: imgPokeApiLogo,
     },
     {
@@ -46,7 +55,7 @@ const Projects = () => {
       description: "",
       img: imgRickMorty,
       url: "https://rickandmorty-gold.vercel.app/",
-      tags: ["React", "Redux", "CSS", "PostgreSQL", "Express"],
+      tags: ["React", "Redux", "CSS", "PostgreSQL", "Express", "Node JS"],
       logo: imgRickMortyLogo,
     },
     {
@@ -148,6 +157,12 @@ const Projects = () => {
               onClick={() => handleFilterChange("PostgreSQL")}
             >
               PostgreSQL
+            </button>
+            <button
+              className={activeTag === "Node JS" ? style.active : ""}
+              onClick={() => handleFilterChange("Node JS")}
+            >
+              Node JS
             </button>
             <button
               className={activeTag === "Express" ? style.active : ""}

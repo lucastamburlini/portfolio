@@ -28,7 +28,7 @@
   --fs-h2: clamp(1.125rem, 2.625vw + 0.875rem, 1.625rem);
   --fs-h3: clamp(1.0625rem, 2.625vw + 0.875rem, 1.2125rem);
 
-  --hover-primary: #ffff00;
+  --hover-primary: #8e7cff;
   --hover-secondary: #ededed;
 }
 
