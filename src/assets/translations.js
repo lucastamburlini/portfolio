@@ -25,6 +25,7 @@ const translations = {
     button_all: "All",
 
     // Projects Description
+    project_educaStream: "EducaStream",
     project_pokeApi: "PokeApi",
     project_rickAndMorty: "Rick and Morty",
     project_taskManager: "Task Manager",
@@ -71,6 +72,7 @@ const translations = {
     button_all: "Todos",
 
     // Projects Description
+    project_educaStream: "EducaStream",
     project_pokeApi: "PokeApi",
     project_rickAndMorty: "Rick y Morty",
     project_taskManager: "Task Manager",

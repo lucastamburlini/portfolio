@@ -22,6 +22,10 @@ import imgPortfolioLogo from "../../assets/imgLogos/portfolioOld.png";
 
 import imgTaskManager from "../../assets/imgProjects/taskManager.jpg";
 import imgTaskManagerLogo from "../../assets/imgLogos/taskManager.png";
+
+import imgEducaStream from "../../assets/imgProjects/educastream.jpg";
+import imgEducaStreamLogo from "../../assets/imgLogos/educaStream.png";
+
 import SectionTitles from "../SectionTitles/SectionTitles";
 
 const Projects = () => {
@@ -31,15 +35,22 @@ const Projects = () => {
   const currentTranslations = translations[currentLanguage];
 
   const listProjects = [
-    /*   {
+    {
       id: 7,
-      title: currentTranslations.project_pokeApi,
+      title: currentTranslations.project_educaStream,
       description: "",
-      img: imgPokeApi,
-      url: "https://pokeapp-three-beta.vercel.app/",
-      tags: ["React", "CSS Module", "PostgreSQL", "Express", "Sequelize", "Node JS"],
-      logo: imgPokeApiLogo,
-    }, */
+      img: imgEducaStream,
+      url: "https://educastream.vercel.app/",
+      tags: [
+        "React",
+        "CSS Module",
+        "PostgreSQL",
+        "Express",
+        "Sequelize",
+        "Node JS",
+      ],
+      logo: imgEducaStreamLogo,
+    },
     {
       id: 6,
       title: currentTranslations.project_pokeApi,
