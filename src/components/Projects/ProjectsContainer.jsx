@@ -23,7 +23,7 @@ import imgPortfolioLogo from "../../assets/imgLogos/portfolioOld.png";
 import imgTaskManager from "../../assets/imgProjects/taskManager.jpg";
 import imgTaskManagerLogo from "../../assets/imgLogos/taskManager.png";
 
-import imgEducaStream from "../../assets/imgProjects/educastream.jpg";
+import imgEducaStream from "../../assets/imgProjects/educaStream.jpg";
 import imgEducaStreamLogo from "../../assets/imgLogos/educaStream.png";
 
 import SectionTitles from "../SectionTitles/SectionTitles";
