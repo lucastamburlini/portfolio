@@ -1,0 +1,22 @@
+.LanguageSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.LanguageSwitch select {
+  cursor: pointer;
+  background: transparent;
+  color: var(--text-secondary-color);
+  padding: 4px 5px;
+  font-size: 10px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  transition: all 0.2s ease-out;
+}
+
+.LanguageSwitch select:hover {
+  background-color: var(--hover-secondary);
+  color: var(--bg-color);
+}
