@@ -1,7 +1,7 @@
 .experiencesContainer {
   width: 90%;
   max-width: 1024px;
-  padding-top: var(--pd-0);
+  padding-top: var(--pd-1);
   margin: auto;
 }
 
@@ -92,7 +92,7 @@
 
 @media screen and (min-width: 768px) {
   .experiencesContainer {
-    padding-top: 0;
+    padding-top: var(--pd-2);
     width: 80%;
   }
 
