@@ -1,0 +1,28 @@
+/* Progress styles */
+
+@keyframes grow-progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#progress {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 0.3em;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  z-index: 9999;
+
+  transform-origin: 0 50%;
+  animation: grow-progress auto linear;
+  animation-timeline: scroll(root block);
+}

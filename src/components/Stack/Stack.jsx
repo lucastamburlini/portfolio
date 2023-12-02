@@ -12,8 +12,8 @@ const Stack = () => {
   return (
     <>
       <SectionTitles id={"stack"} text={currentTranslations.spanStack} />
-      <div className={style.stackContainer}>
-        <section className={style.boxStackContainer}>
+      <section className={style.stackContainer}>
+        <div className={style.boxStackContainer}>
           {skills.map((item, index) => (
             <div key={index} className={style.boxStack}>
               <div className={style.boxStackImg}>{item.icon}</div>
@@ -23,8 +23,8 @@ const Stack = () => {
               </div>
             </div>
           ))}
-        </section>
-      </div>
+        </div>
+      </section>
     </>
   );
 };

@@ -1,6 +1,6 @@
 .card {
-  width: 240px;
-  height: 200px;
+  width: 200px;
+  height: 170px;
   overflow: hidden;
   border: 1px solid var(--border);
   font-size: 12px;
@@ -28,7 +28,7 @@
 .card:hover .cardDeploy {
   display: flex;
   position: absolute;
-  z-index: 99;
+  z-index: 10;
   top: 37.5%;
   left: 50%;
   transform: translate(-50%, -50%);

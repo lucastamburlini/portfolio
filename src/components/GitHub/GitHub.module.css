@@ -1,0 +1,63 @@
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.linkGithub {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #09070d;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: var(--pd-1);
+  scale: 1 !important;
+}
+
+.linkGithub h2 a {
+  color: var(--text-secondary-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.linkGithub h2 a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.linkGithubSvg {
+  width: 24px;
+  height: 24px;
+  padding-left: 10px;
+}
+
+.linkGithubSvg svg {
+  width: 24px;
+  height: 24px;
+  color: var(--text-secondary-color);
+}
+
+.lighting {
+  position: absolute;
+  background-image: linear-gradient(
+    90deg,
+    var(--primary-color) 20%,
+    var(--secondary-color)
+  );
+  z-index: -999;
+  width: 100%;
+  height: 140px;
+  opacity: 0.21;
+  filter: contrast(290%) blur(40px);
+  border-radius: 10% 60% 20% 80%;
+  top: 100;
+}

@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import CopyrightIcon from "@mui/icons-material/Copyright";
 import translations from "../../assets/translations";
 import logoWhiteLarge from "../../assets/logoWhiteLarge.png";
 
@@ -13,7 +12,8 @@ const Footer = () => {
   const currentLanguage = useSelector((state) => state.language);
 
   return (
-    <div className={style.footer}>
+    <footer className={style.footer}>
+      <div className={style.lighting}></div>
       <div className={style.logo}>
         <img src={logoWhiteLarge} alt="logo_white_large.png" />
       </div>
@@ -53,10 +53,9 @@ const Footer = () => {
       </div>
       <div className={style.copyright}>
         {translations[currentLanguage].footer_text_II}
-        <CopyrightIcon />
         Lucas Tamburlini
       </div>
-    </div>
+    </footer>
   );
 };
 

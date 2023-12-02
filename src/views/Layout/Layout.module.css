@@ -1,0 +1,21 @@
+.layoutContainer {
+  width: 100%;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+section {
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%;
+}

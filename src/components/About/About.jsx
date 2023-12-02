@@ -9,24 +9,26 @@ import SectionTitles from "../SectionTitles/SectionTitles";
 import style from "./About.module.css";
 
 const About = () => {
-  const currentLanguage = useSelector((state) => state.language);
-  const currentTranslations = translations[currentLanguage];
+  const language = useSelector((state) => state.language);
+  const { spanAbout, about_title, about_text_I, about_text_II } =
+    translations[language];
 
   return (
-    <>
-      <SectionTitles id={"about"} text={currentTranslations.spanAbout} />
-      <div  className={style.about}>
-        <section className={style.aboutImg}>
-          <img src={imgAbout} alt={imgAbout} />
-        </section>
-        <section className={style.aboutInfo}>
-          <div className={style.aboutInfoContent}>
-            <h2>{currentTranslations.about_title}</h2>
-            <p>{currentTranslations.about_text_I}</p>
+    <section id="about" className={style.about}>
+      <SectionTitles text={spanAbout} />
+      <div className={style.cardAbout}>
+        <div className={style.cardImg}>
+          <img src={imgAbout} alt="About" />
+        </div>
+
+        <div className={style.cardInfo}>
+          <div className={style.cardInfoText}>
+            <h2>{about_title}</h2>
+            <p>{about_text_I}</p>
             <br />
-            <p>{currentTranslations.about_text_II}</p>
-            <div className={style.contact}>
-              <ul>
+            <p>{about_text_II}</p>
+            <div className={style.cardContact}>
+              <ul className={style.socialIcons}>
                 <li>
                   <a
                     href="https://www.linkedin.com/in/lucasgabrieltamburlini/"
@@ -57,9 +59,9 @@ const About = () => {
               </ul>
             </div>
           </div>
-        </section>
+        </div>
       </div>
-    </>
+    </section>
   );
 };
 

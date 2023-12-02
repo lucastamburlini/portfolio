@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
-
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch.jsx";
 import logoWhiteLarge from "../../assets/logoWhiteLarge.png";
+import { useSelector } from "react-redux";
+import translations from "../../assets/translations.js";
 
 import style from "../Navbar/Navbar.module.css";
-import styleApp from "../../App.module.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const language = useSelector((state) => state.language);
+  const { projects, about, experiences, skills } = translations[language];
 
   useEffect(() => {
     const handleResize = () => {
@@ -46,7 +48,7 @@ const Navbar = () => {
 
   return (
     <nav className={`${scrolled ? style.scrolled : ""}`}>
-      <div className={styleApp.container + " " + style.navContainer}>
+      <div className={style.navContainer}>
         <div className={style.navbarLogo}>
           <img src={logoWhiteLarge} alt="logo_white_large.png" />
         </div>
@@ -56,18 +58,23 @@ const Navbar = () => {
             <div>
               <ul>
                 <li>
+                  <a href="#projects" onClick={handleClick}>
+                    {projects}
+                  </a>
+                </li>
+                <li>
                   <a href="#about" onClick={handleClick}>
-                    About
+                    {about}
+                  </a>
+                </li>
+                <li>
+                  <a href="#experiences" onClick={handleClick}>
+                    {experiences}
                   </a>
                 </li>
                 <li>
                   <a href="#stack" onClick={handleClick}>
-                    Skills
-                  </a>
-                </li>
-                <li>
-                  <a href="#projects" onClick={handleClick}>
-                    Projects
+                    {skills}
                   </a>
                 </li>
               </ul>

@@ -1,74 +1,102 @@
 .about {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 90%;
   max-width: 1024px;
+  min-height: 100vh;
   margin: auto;
-  padding: var(--pd-2);
 }
 
-.aboutImg {
+.cardAbout {
+  width: 100%;
+  background-color: var(--bg-color-off);
+  text-align: center;
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.cardImg {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: auto;
+  height: 100%;
+  margin: auto;
 }
 
-.aboutImg img {
-  width: 100%;
+.cardImg img {
+  min-width: 100%;
+  min-height: 100%;
 }
 
-.aboutInfo {
+.cardInfo h2 {
+  padding-bottom: var(--pd-1);
+}
+
+.cardInfo {
+  padding: var(--pd-0);
+}
+
+.socialIcons {
+  padding-top: var(--pd-0);
+}
+
+.cardContact {
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 
-.about h2 {
-  padding: var(--pd-1);
-}
-
-.contact ul {
-  padding: var(--pd-1);
-}
-
-.contact ul {
+.cardContact ul {
   display: flex;
   justify-content: start;
-  gap: 20px;
+  gap: 25px;
 }
 
-.contact svg {
+.cardContact svg {
   color: var(--text-secondary-color);
-  height: 22px;
+  height: 24px;
+  width: 24px;
   transition: all 0.2s ease-out;
 }
 
-.contact svg:hover {
+.cardContact svg:hover {
   color: var(--hover-secondary);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 980px) {
   .about {
+    width: 80%;
+  }
+
+  .cardAbout {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    text-align: start;
   }
 
-  .aboutImg {
-    width: 50%;
-    justify-content: center;
+  .cardImg {
+    max-width: 30%;
   }
 
-  .aboutImg img {
-    width: 80%;
+  .cardInfo {
+    padding: 0;
   }
 
-  .aboutInfo {
-    width: 50%;
+  .cardInfoText {
+    padding: 0 var(--pd-1);
   }
 
-  .aboutInfoContent {
-    margin: auto;
-    width: 80%;
+  .cardContact {
+    justify-content: start;
+  }
+
+  .socialIcons {
+    padding-top: var(--pd-1);
   }
 }

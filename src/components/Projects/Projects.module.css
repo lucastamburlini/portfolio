@@ -1,0 +1,32 @@
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.code {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1024px;
+  margin: auto;
+  gap: 20px;
+  padding-bottom: var(--pd-1);
+}
+
+@media screen and (min-width: 768px) {
+  .projectsContainer {
+    width: 80%;
+  }
+
+  .code {
+    width: 100%;
+    padding-top: var(--pd-1);
+    padding-bottom: 0;
+  }
+}

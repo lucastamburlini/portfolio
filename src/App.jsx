@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
-import Layout from "./views/Layout";
+import Layout from "./views/Layout/Layout";
 
 import "./App.module.css";
 

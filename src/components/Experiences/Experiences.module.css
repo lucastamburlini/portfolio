@@ -1,17 +1,135 @@
 .experiencesContainer {
+  width: 90%;
+  max-width: 1024px;
+  padding-top: var(--pd-0);
+  margin: auto;
+}
+
+.experiencesContainer ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
+}
+
+.timeline {
   width: 100%;
-  padding: var(--pd-2);
+  position: relative;
+  padding-bottom: var(--pd-2);
 }
 
-.experiencesContainer h2 {
-  padding: var(--pd-1);
+.timeline li {
+  display: flex;
 }
 
-.experiencesContainer .experiencesText {
-  max-width: 70%;
-  margin: auto;
+.timeline h3 {
+  background-image: linear-gradient(
+    90deg,
+    var(--primary-color) 30%,
+    var(--secondary-color)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0.5px 1px 0.5px rgba(255, 255, 255, 0.1);
+}
+
+.timelineMiddle {
+  position: relative;
+  width: 20px;
+  min-height: 20px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+}
+
+.svgBackground {
+  background-color: var(--bg-color);
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.timelineMiddle svg {
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  position: absolute;
+}
+
+.timelineMiddle::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 100%;
+  background: var(--text-primary-color);
+  z-index: 0;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 10px;
+}
+
+.timelineStart {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: var(--pd-0);
+}
+
+.timelineEnd {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: var(--pd-0);
+}
+
+@media screen and (min-width: 768px) {
+  .experiencesContainer {
+    padding-top: 0;
+    width: 80%;
+  }
+
+  .timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .timelineMiddle {
+    display: flex;
+    justify-content: center;
+    order: 0;
+  }
+
+  .timelineStart .time {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .timelineStart {
+    text-align: end;
+    width: 100%;
+    max-width: 50%;
+    order: -1;
+  }
+
+  .timelineEnd {
+    text-align: start;
+    width: 100%;
+    max-width: 50%;
+    order: -1;
+    transform: translate(100%);
+    padding-left: 20px;
+  }
 }

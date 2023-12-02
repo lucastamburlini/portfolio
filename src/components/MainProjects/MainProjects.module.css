@@ -1,0 +1,30 @@
+.projects {
+  width: 100%;
+  max-width: 500px;
+  min-height: 480px;
+  border-radius: var(--radius);
+  background-color: var(--bg-color-off);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: var(--pd-0);
+}
+
+.projects h2 {
+  padding-bottom: var(--pd-0);
+}
+
+.listProjects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projectsContainer header h2 {
+  padding: var(--pd-0);
+}

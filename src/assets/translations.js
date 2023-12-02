@@ -1,8 +1,22 @@
 const translations = {
   English: {
+    // Navbar
+    projects: "Projects",
+    about: "About",
+    experiences: "Experiences",
+    skills: "Skills",
+
     // Home
+    introduction_title: "Full Stack Developer",
     introduction_I: "I create user-centric web experiences with meticulous attention to detail.",
     introduction_II: "Let's bring your digital vision to life!",
+    introduction_button: "Download Resume",
+
+    // Projects
+    spanGithub: "Explore my code at ",
+    project_title: "Featured projects",
+    project_description: "I invite you to explore my online portfolio and dive into my web projects. Discover how I apply these technologies to create online experiences. Use the tag filter to select a technology and see the projects that match your interests and technology skills.",
+    button_all: "All",
 
     // About
     spanAbout: "MY LIFE IN A NUTSHELL",
@@ -15,14 +29,30 @@ const translations = {
     skill_text_I: "In the following section, you will find the technologies I use to develop.",
 
     // Experiences
-    experiences_title: "Experiences",
-    experiences_text_I: "My journey in the world of programming is just beginning, and although I don't have formal work experience yet, I'm learning and progressing every day, step by step. If you're in search of a full-stack web developer, I'm eager to listen. Your guidance and support will be invaluable as I embark on this path.",
+    spanExperiences: "CARERR PATH",
+
+    experiences_III_title: "Human Resources Soft Analyst",
+    experiences_III_date: "Entre Ríos • may 2022 - may 2023",
+    experiences_III_company: "Lemiro Pablo Pietroboni S.A.",
+    experiences_III_text_I: "I successfully managed the complete personnel search and selection processes, with a focus on leadership profiles in areas such as Civil Engineering, Degree in Industrial Organization and Safety & Hygiene Technician, among others, using tools such as LinkedIn Recruiter and candidate evaluation platforms.",
+    experiences_III_text_II: "I contributed directly to improve the organizational climate and designed training and development plans, using human resources management software such as PDA Assessment.",
+
+    experiences_II_title: "Human Resources Generalist Analyst",
+    experiences_II_date: "Entre Ríos • may 2021 - may 2022",
+    experiences_II_company: "Fadel S.A.",
+    experiences_II_text_I: "Successfully managed the human capital of a poultry processing plant with 300 collaborators, implementing effective strategies for recruitment, training, and development, while enhancing inter-departmental communication using project management tools like Trello and Management Committees.",
+    experiences_II_text_II: "Oversaw daily attendance control and managed absenteeism, illness tracking, and Occupational Risk Insurance(ART) reports in collaboration with healthcare professionals.Employed attendance tracking tools like Microsoft Excel to ensure precise and timely data records.",
+    experiences_II_text_III: "Established an organized work environment and drafted disciplinary sanctions in coordination with the company's legal team, utilizing Microsoft Office tools to ensure efficient disciplinary processes were conducted in compliance with established legal guidelines.",
+
+
+    experiences_I_title: "Assistant Technician & Telephone Operator",
+    experiences_I_date: "Entre Ríos • nov 2015 - may 2021",
+    experiences_I_company: "Call Center Derudder Hermanos SRL",
+    experiences_I_text: "I led a call center team, supervised indicators and strategies to improve performance. I generated reports and provided support in sales and customer service at national and international level in the transportation sector, using internal and Google tools.",
 
     // Projects
-    spanProjects: "MY FEATURED PROJECTS",
-    project_title: "Deployment",
-    project_description: "I invite you to explore my online portfolio and dive into my web projects. Discover how I apply these technologies to create online experiences. Use the tag filter to select a technology and see the projects that match your interests and technology skills.",
-    button_all: "All",
+    project_text_I: "portfolio.com",
+    project_text_II: "Access available projects",
 
     // Projects Description
     project_educaStream: "EducaStream",
@@ -38,7 +68,6 @@ const translations = {
     description_enigma: "Explore a numerical riddle game. Developed with HTML, CSS, and JavaScript technologies, this challenge will put you to the test as you attempt to decipher the secret number.",
 
     // Footer
-
     footer_text_I: "Every day, growing, learning, and progressing one step at a time.",
     footer_text_II: "Handcrafted by ",
 
@@ -47,9 +76,23 @@ const translations = {
 
 
   Español: {
+    // Navbar
+    projects: "Proyectos",
+    about: "Sobre mí",
+    experiences: "Experiencias",
+    skills: "Habilidades",
+
     // Home
+    introduction_title: "Desarrollador Full Stack",
     introduction_I: "Creo experiencias web centradas en el usuario con una meticulosa atención al detalle.",
     introduction_II: "¡Hagamos realidad tu visión digital!",
+    introduction_button: "Descargar Resumen",
+
+    // Projects
+    spanGithub: "Explora mi código en ",
+    project_title: "Proyectos destacados",
+    project_description: "Te invito a explorar mi portafolio en línea y sumergirte en mis proyectos web. Descubre cómo aplico estas tecnologías para crear experiencias en línea. Utiliza el filtro de etiquetas para seleccionar una tecnología y ver los proyectos que se ajustan a tus intereses y habilidades tecnológicas.",
+    button_all: "Todos",
 
     // About
     spanAbout: "MI VIDA EN POCAS PALABRAS",
@@ -62,14 +105,29 @@ const translations = {
     skill_text_I: "En la siguiente sección, encontrarás las tecnologías que utilizo para desarrollar.",
 
     // Experiences
-    experiences_title: "Experiencias",
-    experiences_text_I: "Mi recorrido en el mundo de la programación está comenzando, y aunque aún no cuento con experiencia laboral formal, cada día aprendo y avanzo paso a paso. Si estás en búsqueda de un desarrollador web full stack, estoy dispuesto a escuchar. Tu orientación y apoyo serán invaluables para comenzar en este camino.",
+    spanExperiences: "TRAYECTORIA LABORAL",
+
+    experiences_III_title: "Analista Soft de Recursos Humanos",
+    experiences_III_date: "Entre Ríos • may 2021 - may 2022",
+    experiences_III_company: "Lemiro Pablo Pietroboni S.A.",
+    experiences_III_text_I: "Gestioné exitosamente los procesos completos de búsqueda y selección de personal, con un enfoque en perfiles de liderazgo en áreas como Ingeniería Civil, Licenciatura en Organización Industrial y Técnico en Seguridad & Higiene, entre otros, utilizando herramientas como LinkedIn Recruiter y plataformas de evaluación de candidatos.",
+    experiences_III_text_II: "Contribuí de manera directa a mejorar el clima organizacional y diseñé planes de capacitación y desarrollo, empleando software de gestión de recursos humanos como PDA Assessment.",
+
+    experiences_II_title: "Analista Generalista de Recursos Humanos",
+    experiences_II_date: "Entre Ríos • may 2021 - may 2022",
+    experiences_II_company: "Fadel S.A.",
+    experiences_II_text_I: "Administré con éxito el capital humano de la planta procesadora de aves con 300 colaboradores, implementando estrategias efectivas de búsqueda y selección, formación y capacitación, y mejorando la comunicación entre departamentos con herramientas de gestión de proyectos como Trello y Comités de Gestión.",
+    experiences_II_text_II: "Supervisé el control diario de asistencia y gestioné el seguimiento de ausentismo, enfermedades y denuncias de ART, trabajando en colaboración con profesionales de la salud. Utilicé herramientas de seguimiento de asistencia como Microsoft Excel para garantizar un registro preciso y oportuno de los datos.", experiences_II_text_III: "Establecí un entorno laboral ordenado y redacté sanciones disciplinarias en coordinación con el equipo legal de la empresa, utilizando las herramientas de Microsoft Office para asegurar que los procesos disciplinarios se llevaran a cabo de manera eficiente y siguiendo las pautas legales establecidas.",
+
+
+    experiences_I_title: "Asistente Técnico & Operador Telefónico ",
+    experiences_I_date: "Entre Ríos • nov 2015 - may 2021",
+    experiences_I_company: "Call Center Derudder Hermanos SRL",
+    experiences_I_text: "Lideré un equipo de atención telefónica, supervisé indicadores y estrategias para mejorar el desempeño. Generé informes y brindé soporte en ventas y atención al cliente a nivel nacional e internacional en el sector del transporte, utilizando herramientas internas y de Google.",
 
     // Projects
-    spanProjects: "MIS PROYECTOS DESTACADOS",
-    project_title: "Implementación",
-    project_description: "Te invito a explorar mi portafolio en línea y sumergirte en mis proyectos web. Descubre cómo aplico estas tecnologías para crear experiencias en línea. Utiliza el filtro de etiquetas para seleccionar una tecnología y ver los proyectos que se ajustan a tus intereses y habilidades tecnológicas.",
-    button_all: "Todos",
+    project_text_I: "portafolio.com",
+    project_text_II: "Accede a proyectos disponibles",
 
     // Projects Description
     project_educaStream: "EducaStream",
@@ -85,7 +143,6 @@ const translations = {
     description_enigma: "Explora un juego de adivinanza numérica. Desarrollado con las tecnologías de HTML, CSS y JavaScript, este desafío te pondrá a prueba mientras intentas descifrar el número secreto.",
 
     // Footer
-
     footer_text_I: "Cada día, creciendo, aprendiendo y progresando paso a paso.",
     footer_text_II: "Hecho a mano por "
   }
