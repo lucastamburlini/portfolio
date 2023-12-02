@@ -1,5 +1,5 @@
 .sectionTitlesContainer {
-  width: 100%;
+  width: 90%;
   text-align: center;
   margin-bottom: var(--pd-1);
   justify-content: center;
@@ -31,5 +31,6 @@
 @media screen and (min-width: 768px) {
   .sectionTitlesContainer {
     margin-bottom: var(--pd-2);
+    width: 80%;
   }
 }
