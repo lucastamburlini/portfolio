@@ -41,7 +41,7 @@ const Browser = () => {
             <li>
               <LinkIcon />{" "}
               <a target="_blank" href={project.url} rel="noreferrer">
-                {project.url}
+                {project.title}
               </a>
             </li>
           </div>
