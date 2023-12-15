@@ -1,6 +1,7 @@
 const translations = {
   English: {
     // Navbar
+    home: "Home",
     projects: "Projects",
     about: "About",
     experiences: "Experiences",
@@ -13,7 +14,7 @@ const translations = {
     introduction_button: "Download Resume",
 
     // Projects
-    spanGithub: "Explore my code at ",
+    spanProjectsView: "Explore the details of my ",
     project_title: "Featured projects",
     project_description: "I invite you to explore my online portfolio and dive into my web projects. Discover how I apply these technologies to create online experiences. Use the tag filter to select a technology and see the projects that match your interests and technology skills.",
     button_all: "All",
@@ -56,8 +57,11 @@ const translations = {
 
     // Projects Description
     project_educaStream: "EducaStream",
+    description_educaStream: "In the last Henry Bootcamp project, I was part of a four-person team that developed a microlearning education site with React. We used CSS Module to style the page and developed a Back End in Node.js and Express. We implemented search, sorting, course details, payment gateway with Stripe, shopping cart and used Firebase to store data and manage login and logout.",
     project_pokeApi: "PokeApi",
+    description_pokeapi: "In my time at Henry Bootcamp, for the final individual project, I built a SPA with React and Redux, using pure CSS for the design. I integrated the PekeApi API with a Back End in Node.js and Express, offering search by name, filters and details of more than 450 Pokémon.",
     project_rickAndMorty: "Rick and Morty",
+    description_rickAndMorty: "Integrator Project at Henry Bootcamp, is a Rick and Morty SPA created with React, Redux and CSS technologies. Access by ID or randomly to characters, with sorting, filters and favorites. Login/logout functions, integrating an API.",
     project_taskManager: "Task Manager",
     description_taskManager: "My first web project, a basic to-do list using JavaScript, HTML, and CSS. My initial steps into web development.",
     project_portfolio: "Web Portfolio v1.0",
@@ -65,7 +69,9 @@ const translations = {
     project_rps: "Rock, Paper or Scissor",
     description_rps: "Enjoy the classic Rock, Paper, Scissors game, created with HTML, CSS and JavaScript technologies. Have fun in an interactive way.",
     project_enigma: "Enigma",
-    description_enigma: "Explore a numerical riddle game. Developed with HTML, CSS, and JavaScript technologies, this challenge will put you to the test as you attempt to decipher the secret number.",
+    description_enigma: "Explore this guessing game. Developed with HTML, CSS and JavaScript technologies, this challenge tests your skills as you try to decipher the secret number. Inspired by my love for video games.",
+
+    code: "CODE",
 
     // Footer
     footer_text_I: "Every day, growing, learning, and progressing one step at a time.",
@@ -77,6 +83,7 @@ const translations = {
 
   Español: {
     // Navbar
+    home: "Inicio",
     projects: "Proyectos",
     about: "Sobre mí",
     experiences: "Experiencias",
@@ -89,7 +96,7 @@ const translations = {
     introduction_button: "Descargar Resumen",
 
     // Projects
-    spanGithub: "Explora mi código en ",
+    spanProjectsView: "Explora los detalles de mis ",
     project_title: "Proyectos destacados",
     project_description: "Te invito a explorar mi portafolio en línea y sumergirte en mis proyectos web. Descubre cómo aplico estas tecnologías para crear experiencias en línea. Utiliza el filtro de etiquetas para seleccionar una tecnología y ver los proyectos que se ajustan a tus intereses y habilidades tecnológicas.",
     button_all: "Todos",
@@ -131,8 +138,11 @@ const translations = {
 
     // Projects Description
     project_educaStream: "EducaStream",
+    description_educaStream: "En el último proyecto del Henry Bootcamp, fui parte de un equipo de cuatro personas que desarrolló un sitio de educación microlearning con React. Utilizamos CSS Module para darle estilos a la página y desarrollamos un Back End en Node.js y Express. Implementamos búsqueda, ordenamiento, detalles de cursos, pasarela de pagos con Stripe, carrito de compras y empleamos Firebase para almacenar datos y gestionar inicio y cierre de sesión.",
     project_pokeApi: "PokeApi",
+    description_pokeapi: "En mi etapa en Henry Bootcamp, para el proyecto final individual, construí una SPA con React y Redux, utilizando CSS puro para el diseño. Integré la API PekeApi con un Back End en Node.js y Express, ofreciendo búsqueda por nombre, filtros y detalles de más de 450 Pokémon.",
     project_rickAndMorty: "Rick y Morty",
+    description_rickAndMorty: "Proyecto Integrador en Henry Bootcamp, es una SPA de Rick and Morty creada con tecnologías React, Redux y CSS. Accede por ID o aleatoriamente a personajes, con ordenamiento, filtros y favoritos. Funciones de inicio/cierre de sesión, integrando una API.",
     project_taskManager: "Task Manager",
     description_taskManager: "Mi primer proyecto web, una simple lista de tareas con JavaScript, HTML y CSS. Mis primeros pasos en el desarrollo web.",
     project_portfolio: "Portfolio Web v1.0",
@@ -140,7 +150,9 @@ const translations = {
     project_rps: "Piedra, Papel o Tijera",
     description_rps: "Disfruta del clásico juego Piedra, Papel o Tijera, creado con tecnologías HTML, CSS y JavaScript. Diviértete de forma interactiva.",
     project_enigma: "Enigma",
-    description_enigma: "Explora un juego de adivinanza numérica. Desarrollado con las tecnologías de HTML, CSS y JavaScript, este desafío te pondrá a prueba mientras intentas descifrar el número secreto.",
+    description_enigma: "Explora este juego de adivinanza. Desarrollado con las tecnologías de HTML, CSS y JavaScript, este desafío te pone a prueba tus habilidades mientras intentas descifrar el número secreto. Inspirado por mi amor por los videojuegos.",
+
+    code: "CÓDIGO",
 
     // Footer
     footer_text_I: "Cada día, creciendo, aprendiendo y progresando paso a paso.",

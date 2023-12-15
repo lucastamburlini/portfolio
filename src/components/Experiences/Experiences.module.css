@@ -1,8 +1,11 @@
 .experiencesContainer {
   width: 90%;
   max-width: 1024px;
-  padding-top: var(--pd-1);
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .experiencesContainer ul {
@@ -13,7 +16,6 @@
 .timeline {
   width: 100%;
   position: relative;
-  padding-bottom: var(--pd-2);
 }
 
 .timeline li {

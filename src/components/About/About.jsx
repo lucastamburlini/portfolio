@@ -14,7 +14,7 @@ const About = () => {
     translations[language];
 
   return (
-    <section id="about" className={style.about}>
+    <section id="about" className={style.aboutContainer}>
       <SectionTitles text={spanAbout} />
       <div className={style.cardAbout}>
         <div className={style.cardImg}>

@@ -29,6 +29,9 @@
   --pd-1: 32px;
   --pd-2: 64px;
 
+  --m-1: 3rem;
+  --m-2: 6rem;
+
   /* Font sizes */
   --font-size-base: 1.5625rem;
   --fs-h1: clamp(var(--font-size-base), 1.5rem + 5.163vw, 6rem);

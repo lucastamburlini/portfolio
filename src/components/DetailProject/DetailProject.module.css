@@ -1,0 +1,164 @@
+.detailProjectContainer {
+  width: 100%;
+  min-height: 200px;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: var(--pd-0);
+  gap: 20px;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.header {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgContainer {
+  width: 100%;
+  max-width: 270px;
+  height: 170px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgContainer img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+.titleContainer {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  & a {
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  & a:hover {
+    color: var(--text-primary-color);
+  }
+}
+
+.tagsContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagsContainer > div {
+  color: var(--text-primary-color);
+  display: flex;
+  border-radius: var(--radius);
+  padding: 1px 7px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3aspx;
+}
+
+.detailProjectContainer .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  & ul li a {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all 0.2 ease;
+    font-size: 9px;
+
+    &:hover {
+      color: var(--text-primary-color);
+    }
+
+    &:hover svg {
+      color: var(--text-primary-color);
+    }
+
+    & svg {
+      width: 12px;
+      height: 12px;
+      color: var(--text-secondary-color);
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .detailProjectContainer {
+    transition: all 0.3s ease;
+    padding: var(--pd-1);
+
+    &:hover {
+      scale: 1.025;
+      box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--border);
+      background-color: rgba(255, 255, 255, 0.01);
+    }
+  }
+
+  .header {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .imgContainer {
+    max-width: 200px;
+    height: 110px;
+  }
+
+  .titleContainer {
+    text-align: start;
+  }
+
+  .tagsContainer {
+    justify-content: start;
+  }
+
+  .detailProjectContainer .info {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+  }
+  .code {
+    width: 100%;
+    justify-content: end;
+
+    & ul {
+      display: flex;
+      justify-content: end;
+      gap: 30px;
+    }
+  }
+}

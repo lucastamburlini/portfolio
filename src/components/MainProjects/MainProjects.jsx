@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import translations from "../../assets/translations";
-import CardProject from "../CardProjects/CardProjects";
+import CardProject from "../CardProjects/CardProject";
 import getProjectsData from "../../assets/projectsData";
 
 import style from "./MainProjects.module.css";

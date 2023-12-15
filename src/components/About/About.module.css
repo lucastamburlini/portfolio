@@ -1,4 +1,4 @@
-.about {
+.aboutContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,6 @@
   height: 100%;
   width: 90%;
   max-width: 1024px;
-  min-height: 100vh;
   margin: auto;
 }
 

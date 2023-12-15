@@ -7,12 +7,14 @@ import { useSelector } from "react-redux";
 import translations from "../../assets/translations.js";
 
 import style from "../Navbar/Navbar.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const language = useSelector((state) => state.language);
-  const { projects, about, experiences, skills } = translations[language];
+  const { home, projects, about, experiences, skills } = translations[language];
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleResize = () => {
@@ -46,6 +48,25 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleToProjects = () => {
+    event.preventDefault();
+    navigate("/projects");
+    window.scrollTo({ top: 0 });
+  };
+
+  const handleToHome = () => {
+    event.preventDefault();
+    window.scrollTo({ top: 0 });
+    navigate("/");
+  };
+
+  const handleToLayout = (sectionId) => {
+
+    navigate("/");
+  
+
+  };
+
   return (
     <nav className={`${scrolled ? style.scrolled : ""}`}>
       <div className={style.navContainer}>
@@ -58,22 +79,57 @@ const Navbar = () => {
             <div>
               <ul>
                 <li>
-                  <a href="#projects" onClick={handleClick}>
+                  <a
+                    href=""
+                    onClick={() => {
+                      handleClick();
+                      handleToHome();
+                    }}
+                  >
+                    {home}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    onClick={() => {
+                      handleClick();
+                      handleToProjects();
+                    }}
+                  >
                     {projects}
                   </a>
                 </li>
                 <li>
-                  <a href="#about" onClick={handleClick}>
+                  <a
+                    href="#about"
+                    onClick={() => {
+                      handleClick();
+                      handleToLayout();
+                    }}
+                  >
                     {about}
                   </a>
                 </li>
                 <li>
-                  <a href="#experiences" onClick={handleClick}>
+                  <a
+                    href="#experiences"
+                    onClick={() => {
+                      handleClick();
+                      handleToLayout();
+                    }}
+                  >
                     {experiences}
                   </a>
                 </li>
                 <li>
-                  <a href="#stack" onClick={handleClick}>
+                  <a
+                    href="#stack"
+                    onClick={() => {
+                      handleClick();
+                      handleToLayout();
+                    }}
+                  >
                     {skills}
                   </a>
                 </li>

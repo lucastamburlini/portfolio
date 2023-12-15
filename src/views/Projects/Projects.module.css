@@ -1,0 +1,24 @@
+.projectsContainer {
+  width: 90%;
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: var(--m-1) auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.listProjectsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .projectsContainer {
+    margin: var(--m-2) auto;
+  }
+}

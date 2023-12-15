@@ -14,7 +14,7 @@ const Home = () => {
   } = translations[language];
 
   return (
-    <section className={style.heroContainer}>
+    <section id="home" className={style.heroContainer}>
       <div className={style.title}>
         <h1>{introduction_title}</h1>
         <div className={style.lighting}></div>

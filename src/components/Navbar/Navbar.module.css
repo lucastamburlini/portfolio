@@ -3,18 +3,16 @@ nav {
   align-items: center;
   width: 100%;
   height: 10vh;
-  padding: var(--pd-0);
   position: sticky;
   background-color: var(--bg-color);
   transition: box-shadow 0.1s ease 0s, background-color 0.1s ease 0s;
   z-index: 99;
   top: 0;
-}
 
-nav img {
-  width: 38px;
+  & img {
+    width: 38px;
+  }
 }
-
 .scrolled {
   box-shadow: inset 0 -1px 0 0px var(--border);
 }
@@ -83,15 +81,15 @@ nav img {
   height: 38px;
   width: 38px;
   transition: all 0.2s ease-out;
+
+  & svg {
+    height: 36px;
+    width: 36px;
+  }
 }
 
 .navbarToggle:hover {
   color: var(--hover-secondary);
-}
-
-.navbarToggle svg {
-  height: 36px;
-  width: 36px;
 }
 
 .menuClose {
@@ -113,14 +111,14 @@ nav img {
     display: flex;
     opacity: 1;
     position: relative;
-  }
 
-  .navbarLinks ul {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    & ul {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
   }
 
   .navbarToggle {

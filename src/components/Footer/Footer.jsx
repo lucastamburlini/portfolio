@@ -13,7 +13,6 @@ const Footer = () => {
 
   return (
     <footer className={style.footer}>
-      <div className={style.lighting}></div>
       <div className={style.logo}>
         <img src={logoWhiteLarge} alt="logo_white_large.png" />
       </div>
@@ -55,6 +54,7 @@ const Footer = () => {
         {translations[currentLanguage].footer_text_II}
         Lucas Tamburlini
       </div>
+      <div className={style.lighting}></div>
     </footer>
   );
 };

@@ -2,7 +2,10 @@
   width: 90%;
   max-width: 1024px;
   margin: auto;
-  padding-bottom: var(--pd-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .boxStackContainer {

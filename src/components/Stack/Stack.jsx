@@ -11,8 +11,8 @@ const Stack = () => {
 
   return (
     <>
-      <SectionTitles id={"stack"} text={currentTranslations.spanStack} />
       <section className={style.stackContainer}>
+      <SectionTitles id={"stack"} text={currentTranslations.spanStack} />
         <div className={style.boxStackContainer}>
           {skills.map((item, index) => (
             <div key={index} className={style.boxStack}>
