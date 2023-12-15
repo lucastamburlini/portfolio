@@ -15,7 +15,10 @@ const DetailProject = (props) => {
         </div>
         <div className={style.titleContainer}>
           <div>
-            <h2>{project.title}</h2>
+            <div className={style.title}>
+              <h2>{project.title}</h2>
+              <img src={project.logo} alt={project.title} />
+            </div>
             <a target="_blank" rel="noopener noreferrer" href={project.url}>
               {project.url}
             </a>
