@@ -21,9 +21,33 @@ import imgTaskManagerLogo from "./imgLogos/taskManager.png";
 import imgEducaStream from "./imgProjects/educaStream.jpg";
 import imgEducaStreamLogo from "./imgLogos/educaStream.png";
 
+import imgFlexwork from "./imgProjects/flexwork.png";
+import imgFlexworkLogo from "./imgLogos/flexwork.png";
+
 export const getProjectsData = (currentLanguage) => {
   const currentTranslations = translations[currentLanguage];
   return [
+    {
+      id: 8,
+      title: currentTranslations.project_flexwork,
+      description: currentTranslations.description_flexwork,
+      img: imgFlexwork,
+      url: "https://www.flexworklatam.com/",
+      tags: [
+        "React",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Express",
+        "Sequelize",
+        "Node JS",
+        "Firebase",
+      ],
+      logo: imgFlexworkLogo,
+      main: true,
+      code_frontend: "https://github.com/flexworkFullteam/client",
+      code_backend: "https://github.com/flexworkFullteam/server",
+      code_unique: "",
+    },
     {
       id: 7,
       title: currentTranslations.project_educaStream,
@@ -80,7 +104,7 @@ export const getProjectsData = (currentLanguage) => {
       url: "https://enigma-beryl.vercel.app",
       tags: ["JavaScript", "HTML", "CSS"],
       logo: imgEnigmaLogo,
-      main: true,
+      main: false,
       code_frontend: "",
       code_backend: "",
       code_unique: "https://github.com/lucastamburlini/enigma",

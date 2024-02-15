@@ -10,7 +10,7 @@
   border-bottom: 1px solid var(--border);
   padding: var(--pd-1);
   scale: 1 !important;
-  margin-bottom: var(--pd-1);
+  margin-bottom: var(--m-1);
   text-align: center;
 }
 
