@@ -107,7 +107,7 @@
 }
 
 .window {
-  padding: 10% 0;
+  padding: 20px 0;
   gap: 20px;
   display: flex;
   flex-direction: column;

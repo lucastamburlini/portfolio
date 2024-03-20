@@ -31,16 +31,12 @@ export const getProjectsData = (currentLanguage) => {
   const currentTranslations = translations[currentLanguage];
   return [
     {
-      id: 9,
+      id: 8,
       title: currentTranslations.project_freelanceTips,
       description: currentTranslations.description_freelanceTips,
       img: imgFreelanceTips,
       url: "https://freelance-tips.vercel.app/",
-      tags: [
-        "React",
-        "Tailwind CSS",
-        "Playwright",
-      ],
+      tags: ["React", "Tailwind CSS", "Playwright"],
       logo: imgFreelanceTipsLogo,
       main: true,
       code_frontend: "",
@@ -48,7 +44,7 @@ export const getProjectsData = (currentLanguage) => {
       code_unique: "https://github.com/lucastamburlini/freelanceTips",
     },
     {
-      id: 8,
+      id: 7,
       title: currentTranslations.project_flexwork,
       description: currentTranslations.description_flexwork,
       img: imgFlexwork,
@@ -69,7 +65,7 @@ export const getProjectsData = (currentLanguage) => {
       code_unique: "",
     },
     {
-      id: 7,
+      id: 6,
       title: currentTranslations.project_educaStream,
       description: currentTranslations.description_educaStream,
       img: imgEducaStream,
@@ -91,7 +87,7 @@ export const getProjectsData = (currentLanguage) => {
       code_unique: "",
     },
     {
-      id: 6,
+      id: 5,
       title: currentTranslations.project_pokeApi,
       description: currentTranslations.description_pokeapi,
       img: imgPokeApi,
@@ -104,7 +100,7 @@ export const getProjectsData = (currentLanguage) => {
       code_unique: "",
     },
     {
-      id: 5,
+      id: 4,
       title: currentTranslations.project_rickAndMorty,
       description: currentTranslations.description_rickAndMorty,
       img: imgRickMorty,
@@ -117,7 +113,7 @@ export const getProjectsData = (currentLanguage) => {
       code_unique: "",
     },
     {
-      id: 4,
+      id: 3,
       title: currentTranslations.project_enigma,
       description: currentTranslations.description_enigma,
       img: imgEnigma,
@@ -130,7 +126,7 @@ export const getProjectsData = (currentLanguage) => {
       code_unique: "https://github.com/lucastamburlini/enigma",
     },
     {
-      id: 3,
+      id: 2,
       title: currentTranslations.project_rps,
       description: currentTranslations.description_rps,
       img: imgRps,
@@ -141,19 +137,6 @@ export const getProjectsData = (currentLanguage) => {
       code_frontend: "",
       code_backend: "",
       code_unique: "https://github.com/lucastamburlini/rps-game",
-    },
-    {
-      id: 2,
-      title: currentTranslations.project_portfolio,
-      description: currentTranslations.description_portfolio,
-      img: imgPortfolio,
-      url: "https://lucastamburliniold.vercel.app",
-      tags: ["React", "HTML", "SCSS"],
-      logo: imgPortfolioLogo,
-      main: false,
-      code_frontend: "",
-      code_backend: "",
-      code_unique: "https://github.com/lucastamburlini/lucastamburliniold",
     },
     {
       id: 1,
