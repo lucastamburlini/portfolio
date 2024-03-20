@@ -24,9 +24,29 @@ import imgEducaStreamLogo from "./imgLogos/educaStream.png";
 import imgFlexwork from "./imgProjects/flexwork.png";
 import imgFlexworkLogo from "./imgLogos/flexwork.png";
 
+import imgFreelanceTips from "./imgProjects/freelance-tips.png";
+import imgFreelanceTipsLogo from "./imgLogos/freelance-tips.png";
+
 export const getProjectsData = (currentLanguage) => {
   const currentTranslations = translations[currentLanguage];
   return [
+    {
+      id: 9,
+      title: currentTranslations.project_freelanceTips,
+      description: currentTranslations.description_freelanceTips,
+      img: imgFreelanceTips,
+      url: "https://freelance-tips.vercel.app/",
+      tags: [
+        "React",
+        "Tailwind CSS",
+        "Playwright",
+      ],
+      logo: imgFreelanceTipsLogo,
+      main: true,
+      code_frontend: "",
+      code_backend: "",
+      code_unique: "https://github.com/lucastamburlini/freelanceTips",
+    },
     {
       id: 8,
       title: currentTranslations.project_flexwork,
@@ -78,7 +98,7 @@ export const getProjectsData = (currentLanguage) => {
       url: "https://pokeapp-three-beta.vercel.app",
       tags: ["React", "Redux", "CSS", "PostgreSQL", "Express", "Node JS"],
       logo: imgPokeApiLogo,
-      main: true,
+      main: false,
       code_frontend: "https://github.com/lucastamburlini/pokeapp",
       code_backend: "https://github.com/lucastamburlini/pokeapi",
       code_unique: "",

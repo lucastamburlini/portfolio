@@ -66,6 +66,9 @@ const translations = {
     project_text_II: "Access available projects",
 
     // Projects Description
+    project_freelanceTips: "Freelance Tips",
+    description_freelanceTips:
+      "Freelance Tips is a web application that represents a community dedicated to sharing information about freelancing with the rest of the world. The platform allows users to discover and share practical tips, tricks and strategies to succeed as a freelancer in today's competitive working world. This application focuses on Playwright and the automated use of testing.",
     project_flexwork: "Flexwork LATAM",
     description_flexwork:
       "I led the development of a web platform that connects projects, professionals and companies. I used React and Tailwind CSS for the design, and implemented authentication and file management functions with Firebase. In addition, I created the backend with Node.js and Express to manage the application logic.",
@@ -166,6 +169,9 @@ const translations = {
     project_text_II: "Accede a proyectos disponibles",
 
     // Projects Description
+    project_freelanceTips: "Freelance Tips",
+    description_freelanceTips:
+      "Freelance Tips es una aplicación web que representa una comunidad dedicada a compartir información sobre freelancing con el resto del mundo. La plataforma permite a los usuarios descubrir y compartir consejos prácticos, trucos y estrategias para tener éxito como freelancer en el competitivo mundo laboral actual. Esta aplicación se enfoca en Playwright y el uso automatizado de pruebas.",
     project_flexwork: "Flexwork LATAM",
     description_flexwork:
       "Lideré el desarrollo de una plataforma web que conecta proyectos, profesionales y empresas. Utilicé React y Tailwind CSS para el diseño, e implementé funciones de autenticación y gestión de archivos con Firebase. Además, creé el backend con Node.js y Express para gestionar la lógica de la aplicación.",
