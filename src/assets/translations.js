@@ -142,7 +142,7 @@ const translations = {
     // Experiences
     spanExperiences: "TRAYECTORIA LABORAL",
 
-    experiences_III_title: "Desarrollador Full Stack (Contratista)",
+    experiences_III_title: "Desarrollador Full Stack (Contrato)",
     experiences_III_date: "Planify • May 2024 - Aug 2024",
     experiences_III_company: "Planify",
     experiences_III_text_I:
