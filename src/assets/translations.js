@@ -143,7 +143,7 @@ const translations = {
     spanExperiences: "TRAYECTORIA LABORAL",
 
     experiences_III_title: "Desarrollador Full Stack (Contrato)",
-    experiences_III_date: "Planify • May 2024 - Aug 2024",
+    experiences_III_date: "Planify • May 2024 - Ago 2024",
     experiences_III_company: "Planify",
     experiences_III_text_I:
       "Formé parte del equipo de desarrollo enfocado en la mejora continua de una plataforma para la gestión de citas en centros de belleza. Desarrollamos el proyecto utilizando Next.js 14, NestJS y Prisma para garantizar eficiencia y escalabilidad.",
