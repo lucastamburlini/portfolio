@@ -21,7 +21,9 @@ const Experiences = () => {
     experiences_I_title,
     experiences_I_date,
     experiences_I_company,
-    experiences_I_text,
+    experiences_I_text_I,
+    experiences_I_text_II,
+    experiences_I_text_III,
   } = translations[language];
 
   return (
@@ -57,6 +59,7 @@ const Experiences = () => {
               <br />
               <p>{experiences_III_text_II}</p>
               <br />
+              <p>{experiences_III_text_II}</p>
             </div>
           </div>
         </li>
@@ -120,7 +123,11 @@ const Experiences = () => {
               <h4>{experiences_I_company}</h4>
             </div>
             <div>
-              <p>{experiences_I_text}</p>
+              <p>{experiences_I_text_I}</p>
+              <br />
+              <p>{experiences_I_text_II}</p>
+              <br />
+              <p>{experiences_I_text_III}</p>
             </div>
           </div>
         </li>

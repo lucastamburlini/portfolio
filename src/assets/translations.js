@@ -37,29 +37,31 @@ const translations = {
     // Experiences
     spanExperiences: "CARERR PATH",
 
-    experiences_III_title: "Human Resources Soft Analyst",
-    experiences_III_date: "Entre Ríos • may 2022 - may 2023",
-    experiences_III_company: "Lemiro Pablo Pietroboni S.A.",
+    experiences_III_title: "Full Stack Developer (Contractor)",
+    experiences_III_date: "Planify • May 2024 - Aug 2024",
+    experiences_III_company: "Planify",
     experiences_III_text_I:
-      "I successfully managed the complete personnel search and selection processes, with a focus on leadership profiles in areas such as Civil Engineering, Degree in Industrial Organization and Safety & Hygiene Technician, among others, using tools such as LinkedIn Recruiter and candidate evaluation platforms.",
+      "I was part of the development team focused on the continuous improvement of a platform for managing appointments in beauty centers. We developed the project using Next.js 14, NestJS, and Prisma to ensure efficiency and scalability.",
     experiences_III_text_II:
-      "I contributed directly to improve the organizational climate and designed training and development plans, using human resources management software such as PDA Assessment.",
+      "I used Supabase for data management and Tailwind CSS for interface design. I integrated PostHog for feature management and real-time usage analysis.",
 
-    experiences_II_title: "Human Resources Generalist Analyst",
-    experiences_II_date: "Entre Ríos • may 2021 - may 2022",
-    experiences_II_company: "Fadel S.A.",
+    experiences_II_title: "Full Stack Developer (Freelance)",
+    experiences_II_date: "Flexwork LATAM • Jan 2024 - Feb 2024",
+    experiences_II_company: "Flexwork LATAM",
     experiences_II_text_I:
-      "Successfully managed the human capital of a poultry processing plant with 300 collaborators, implementing effective strategies for recruitment, training, and development, while enhancing inter-departmental communication using project management tools like Trello and Management Committees.",
+      "Led the development of a web platform connecting projects, professionals, and companies. Used React and Tailwind CSS for design.",
     experiences_II_text_II:
-      "Oversaw daily attendance control and managed absenteeism, illness tracking, and Occupational Risk Insurance(ART) reports in collaboration with healthcare professionals.Employed attendance tracking tools like Microsoft Excel to ensure precise and timely data records.",
-    experiences_II_text_III:
-      "Established an organized work environment and drafted disciplinary sanctions in coordination with the company's legal team, utilizing Microsoft Office tools to ensure efficient disciplinary processes were conducted in compliance with established legal guidelines.",
+      "Implemented authentication and file management features with Firebase. Developed the backend with Node.js, Express, and Sequelize, using PostgreSQL for the database.",
 
-    experiences_I_title: "Assistant Technician & Telephone Operator",
-    experiences_I_date: "Entre Ríos • nov 2015 - may 2021",
-    experiences_I_company: "Call Center Derudder Hermanos SRL",
-    experiences_I_text:
-      "I led a call center team, supervised indicators and strategies to improve performance. I generated reports and provided support in sales and customer service at national and international level in the transportation sector, using internal and Google tools.",
+    experiences_I_title: "Full Stack Developer (Training Contract)",
+    experiences_I_date: "Henry • Jul 2023 - Feb 2024",
+    experiences_I_company: "Henry",
+    experiences_I_text_I:
+      "Used React and Tailwind CSS to design a web platform connecting projects, professionals, and companies. Implemented authentication and file management with Firebase.",
+    experiences_I_text_II:
+      "Developed the backend with Node.js, Express, and Sequelize, using PostgreSQL for the database.",
+    experiences_I_text_III:
+      "Created an individual SPA project with React, CSS, and Redux, integrating the PokeApi to manage data for over 450 Pokémon. Developed another SPA with React, Redux, and CSS, using the Rick & Morty API for search, filtering, and authentication features.",
 
     // Projects
     project_text_I: "portfolio.com",
@@ -140,29 +142,31 @@ const translations = {
     // Experiences
     spanExperiences: "TRAYECTORIA LABORAL",
 
-    experiences_III_title: "Analista Soft de Recursos Humanos",
-    experiences_III_date: "Entre Ríos • may 2021 - may 2022",
-    experiences_III_company: "Lemiro Pablo Pietroboni S.A.",
+    experiences_III_title: "Desarrollador Full Stack (Contratista)",
+    experiences_III_date: "Planify • May 2024 - Aug 2024",
+    experiences_III_company: "Planify",
     experiences_III_text_I:
-      "Gestioné exitosamente los procesos completos de búsqueda y selección de personal, con un enfoque en perfiles de liderazgo en áreas como Ingeniería Civil, Licenciatura en Organización Industrial y Técnico en Seguridad & Higiene, entre otros, utilizando herramientas como LinkedIn Recruiter y plataformas de evaluación de candidatos.",
+      "Formé parte del equipo de desarrollo enfocado en la mejora continua de una plataforma para la gestión de citas en centros de belleza. Desarrollamos el proyecto utilizando Next.js 14, NestJS y Prisma para garantizar eficiencia y escalabilidad.",
     experiences_III_text_II:
-      "Contribuí de manera directa a mejorar el clima organizacional y diseñé planes de capacitación y desarrollo, empleando software de gestión de recursos humanos como PDA Assessment.",
+      "Utilicé Supabase para la gestión de datos y Tailwind CSS para el diseño de interfaces. Integré PostHog para la gestión de funciones y el análisis de uso en tiempo real.",
 
-    experiences_II_title: "Analista Generalista de Recursos Humanos",
-    experiences_II_date: "Entre Ríos • may 2021 - may 2022",
-    experiences_II_company: "Fadel S.A.",
+    experiences_II_title: "Desarrollador Full Stack (Freelance)",
+    experiences_II_date: "Flexwork LATAM • Ene 2024 - Feb 2024",
+    experiences_II_company: "Flexwork LATAM",
     experiences_II_text_I:
-      "Administré con éxito el capital humano de la planta procesadora de aves con 300 colaboradores, implementando estrategias efectivas de búsqueda y selección, formación y capacitación, y mejorando la comunicación entre departamentos con herramientas de gestión de proyectos como Trello y Comités de Gestión.",
+      "Lideré el desarrollo de una plataforma web que conecta proyectos, profesionales y empresas. Utilicé React y Tailwind CSS para el diseño.",
     experiences_II_text_II:
-      "Supervisé el control diario de asistencia y gestioné el seguimiento de ausentismo, enfermedades y denuncias de ART, trabajando en colaboración con profesionales de la salud. Utilicé herramientas de seguimiento de asistencia como Microsoft Excel para garantizar un registro preciso y oportuno de los datos.",
-    experiences_II_text_III:
-      "Establecí un entorno laboral ordenado y redacté sanciones disciplinarias en coordinación con el equipo legal de la empresa, utilizando las herramientas de Microsoft Office para asegurar que los procesos disciplinarios se llevaran a cabo de manera eficiente y siguiendo las pautas legales establecidas.",
+      "Implementé funciones de autenticación y gestión de archivos con Firebase. Desarrollé el backend con Node.js, Express y Sequelize, utilizando PostgreSQL para la base de datos.",
 
-    experiences_I_title: "Asistente Técnico & Operador Telefónico ",
-    experiences_I_date: "Entre Ríos • nov 2015 - may 2021",
-    experiences_I_company: "Call Center Derudder Hermanos SRL",
-    experiences_I_text:
-      "Lideré un equipo de atención telefónica, supervisé indicadores y estrategias para mejorar el desempeño. Generé informes y brindé soporte en ventas y atención al cliente a nivel nacional e internacional en el sector del transporte, utilizando herramientas internas y de Google.",
+    experiences_I_title: "Desarrollador Full Stack (Contrato de Formación)",
+    experiences_I_date: "Henry • Jul 2023 - Feb 2024",
+    experiences_I_company: "Henry",
+    experiences_I_text_I:
+      "Utilicé React y Tailwind CSS para diseñar una plataforma web que conecta proyectos, profesionales y empresas. Implementé autenticación y gestión de archivos con Firebase.",
+    experiences_I_text_II:
+      "Desarrollé el backend con Node.js, Express y Sequelize, utilizando PostgreSQL para la base de datos.",
+    experiences_I_text_III:
+      "Creé un proyecto SPA individual con React, CSS y Redux, integrando la PokeApi para gestionar datos de más de 450 Pokémon. Desarrollé otra SPA con React, Redux y CSS, utilizando la API de Rick & Morty para funciones de búsqueda, filtrado y autenticación.",
 
     // Projects
     project_text_I: "portafolio.com",
