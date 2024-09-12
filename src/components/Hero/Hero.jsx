@@ -7,6 +7,7 @@ import ButtonDownload from "../Button/ButtonDownload";
 const Home = () => {
   const language = useSelector((state) => state.language);
   const {
+    new_portfolio,
     introduction_button,
     introduction_title,
     introduction_I,
@@ -15,6 +16,7 @@ const Home = () => {
 
   return (
     <section id="home" className={style.heroContainer}>
+      <div className={style.newPortfolio}>{new_portfolio}</div>
       <div className={style.title}>
         <h1>{introduction_title}</h1>
         <div className={style.lighting}></div>

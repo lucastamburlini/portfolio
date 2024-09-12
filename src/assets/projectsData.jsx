@@ -12,9 +12,6 @@ import imgEnigmaLogo from "./imgLogos/enigma.png";
 import imgRps from "./imgProjects/rps.jpg";
 import imgRpsLogo from "./imgLogos/rps.png";
 
-import imgPortfolio from "./imgProjects/portfolio.jpg";
-import imgPortfolioLogo from "./imgLogos/portfolioOld.png";
-
 import imgTaskManager from "./imgProjects/taskManager.jpg";
 import imgTaskManagerLogo from "./imgLogos/taskManager.png";
 

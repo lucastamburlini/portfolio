@@ -50,6 +50,13 @@
   top: 0px;
 }
 
+.newPortfolio {
+  border: 1px solid var(--secondary-color);
+  padding: 5px 15px;
+  border-radius: 50px;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .heroContainer {
     width: 80%;

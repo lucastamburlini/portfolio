@@ -8,6 +8,7 @@ const translations = {
     skills: "Skills",
 
     // Home
+    new_portfolio: "Coming soon: my new portfolio! Don't miss it.",
     introduction_title: "Full Stack Developer",
     introduction_I:
       "I create user-centric web experiences with meticulous attention to detail.",
@@ -113,6 +114,7 @@ const translations = {
     skills: "Habilidades",
 
     // Home
+    new_portfolio: "¡Próximamente mi nuevo portafolio! No te lo pierdas.",
     introduction_title: "Desarrollador Full Stack",
     introduction_I:
       "Creo experiencias web centradas en el usuario con una meticulosa atención al detalle.",
